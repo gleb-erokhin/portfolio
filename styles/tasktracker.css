@@ -71,3 +71,58 @@ body {
     display: flex;
     align-items: center;
 }
+
+.main-content {
+    padding-top: 197px;
+    padding-bottom: 197px;
+}
+
+.main-content-block {
+    display: flex;
+    align-items: center;
+    gap: 92px;
+}
+
+.main-content-head {
+    color: var(--Text-Gray-900, #18191F);
+    font-feature-settings: 'liga' off;
+
+    /* Heading / H1 */
+    font-family: Manrope;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 98px;
+    /* 136.111% */
+    margin-bottom: 16px;
+}
+
+.main-content-paragraf {
+    color: var(--Text-Gray-900, #18191F);
+    font-feature-settings: 'liga' off;
+
+    /* Lead / Lead 1 */
+    font-family: Manrope;
+    font-size: 18px;
+    line-height: 32px;
+    /* 177.778% */
+    margin-bottom: 32px;
+    min-width: 550px;
+}
+
+.main-content-button {}
+
+.main-btn {
+    color: var(--Default-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'liga' off;
+
+    /* Label / Large Label */
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    /* 150% */
+    border-radius: 8px;
+    background: var(--Brand-Purple, #8C30F5);
+    padding: 16px 35px;
+}
