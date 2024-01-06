@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html {
+    /* для того чтобы страница была на веь экран */
+    height: 100vh;
+}
+
+body {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* для того чтобы страница была на веь экран */
+    height: 100vh;
+}
+
+/* Центрирование блоков */
+.center {
+    padding-left: calc(50% - 1110px / 2);
+    padding-right: calc(50% - 1110px / 2);
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Навигация */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5E9F2;
+    min-height: 73px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-items {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+    padding-left: 0;
+    justify-content: space-around;
+    align-items: center;
+
+    color: var(--Text-Gray-900, #18191F);
+    /* Label / Medium Label */
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 1.42;
+    /* 142.857% */
+}
+
+.link {
+    text-decoration: none;
+    color: var(--Text-Gray-900, #18191F);
+}
+
+.link:hover {
+    color: #8C30F5;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    margin-right: 32px;
+    align-items: center;
+}
+
+.header-left-text {
+    color: #000;
+    font-family: Raleway;
+    font-weight: 900;
+    line-height: 1.42;
+    /* 142.857% */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Главный блок */
+.main-content {
+    /* уменьшаем отступы чтобы страница раскинулась на 
+    всю ширину браузера, для этого дополнительно назначен класс для body и выдано 100vh hight */
+    /* padding-top: 197px;
+    padding-bottom: 197px; */
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.main-contener {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 38px;
+}
+
+.main-content-head {
+    color: var(--Text-Gray-900, #18191F);
+    font-feature-settings: 'liga' off;
+
+    /* Heading / H1 */
+    font-family: Manrope;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.36;
+    /* 136.111% */
+    margin-bottom: 16px;
+}
+
+.main-content-paragraf {
+    color: var(--Text-Gray-900, #18191F);
+    font-feature-settings: 'liga' off;
+
+    /* Lead / Lead 1 */
+    font-family: Manrope;
+    font-size: 18px;
+    line-height: 1.77;
+    /* 177.778% */
+    margin-bottom: 32px;
+    min-width: 550px;
+}
+
+.main-btn {
+    color: var(--Default-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'liga' off;
+
+    /* Label / Large Label */
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    /* 150% */
+    border-radius: 8px;
+    background: var(--Brand-Purple, #8C30F5);
+    padding: 16px 35px;
+    text-decoration: none;
+}
+
+.main-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* подвал */
+.main-footer {
+    background: #0B0D17;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+}
+
+.copy {
+    color: var(--Text-Gray-300, #D9DBE1);
+    font-feature-settings: 'liga' off;
+
+    /* Body / Body 2 */
+    font-family: Manrope;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+}
