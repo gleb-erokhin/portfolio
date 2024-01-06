@@ -70,6 +70,7 @@ body {
 .header-right {
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
 .main-content {
@@ -80,7 +81,7 @@ body {
 .main-content-block {
     display: flex;
     align-items: center;
-    gap: 92px;
+    gap: 38px;
 }
 
 .main-content-head {
@@ -109,8 +110,6 @@ body {
     min-width: 550px;
 }
 
-.main-content-button {}
-
 .main-btn {
     color: var(--Default-White, #FFF);
     text-align: center;
@@ -126,3 +125,32 @@ body {
     background: var(--Brand-Purple, #8C30F5);
     padding: 16px 35px;
 }
+
+.main-footer {
+    background: #0B0D17;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+}
+
+.copy {
+    color: var(--Text-Gray-300, #D9DBE1);
+    font-feature-settings: 'liga' off;
+
+    /* Body / Body 2 */
+    font-family: Manrope;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.footer-right {
+    display: flex;
+    gap: 16px;
+}
+
+/* .footer-social {
+    border: 1px solid gray;
+    border-radius: 50%;
+    border-width: 17px;
+} */
