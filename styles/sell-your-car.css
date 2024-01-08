@@ -1,0 +1,17 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+.cover-image {
+    background-image: url(../img/sell-your-car/main.jpg);
+    background-repeat: no-repeat;
+    height: 688px;
+    margin: 0 auto;
+}
+
+.cover-container {
+    max-width: 1060px;
+}
