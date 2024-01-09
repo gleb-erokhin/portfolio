@@ -1,5 +1,5 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
@@ -7,6 +7,7 @@
 
 .cover {
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .cover-image {
@@ -15,7 +16,8 @@
     min-height: 688px;
 }
 
-.container {
+.center {
+    margin: 0 auto;
     width: 1060px;
 }
 
@@ -117,4 +119,9 @@
     line-height: 28px;
     /* 140% */
     letter-spacing: -0.6px;
+}
+
+.story {
+    background: #130E27;
+    height: 124px;
 }
