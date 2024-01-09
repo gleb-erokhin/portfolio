@@ -97,7 +97,7 @@
 .service-items {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 82px;
 }
 
@@ -131,15 +131,20 @@
 .story-content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .story-content-paragraf {
     width: 611px;
 }
 
-.story-content-button {
-
+.story-content-paragraf {
+    color: #FFF;
+    font-family: PT Serif;
+    font-size: 20px;
+    line-height: 28px;
+    /* 140% */
+    letter-spacing: -0.4px;
 }
 
 .btn {
@@ -151,4 +156,53 @@
     font-family: 'Montserrat';
     font-size: 22px;
     font-weight: 500;
+}
+
+.pricing {
+    margin: 0 auto;
+    width: 1440px;
+    background: #EFEFEF;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.pricing-main {
+    color: #130E27;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 340px;
+}
+
+.pricing-head {
+    padding-top: 35px;
+}
+
+.pricing-main {
+    padding-top: 40px;
+}
+
+.pricing-paragraf {
+    padding-top: 30px;
+    width: 197px;
+    text-align: center;
 }
