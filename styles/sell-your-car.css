@@ -108,6 +108,7 @@
     gap: 59px;
     width: 164px;
     text-align: center;
+    align-items: center;
 }
 
 .service-item-paragraf {
@@ -122,6 +123,32 @@
 }
 
 .story {
+    display: flex;
     background: #130E27;
     height: 124px;
+}
+
+.story-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.story-content-paragraf {
+    width: 611px;
+}
+
+.story-content-button {
+
+}
+
+.btn {
+    padding: 19px 69px;
+    border-radius: 5px;
+    background: #C62314;
+
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 500;
 }
