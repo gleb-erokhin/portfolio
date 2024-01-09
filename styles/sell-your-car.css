@@ -5,13 +5,72 @@
     box-sizing: border-box;
 }
 
+.cover {
+    max-width: 1440px;
+}
+
 .cover-image {
     background-image: url(../img/sell-your-car/main.jpg);
     background-repeat: no-repeat;
-    height: 688px;
-    margin: 0 auto;
+    min-height: 688px;
 }
 
 .cover-container {
-    max-width: 1060px;
+    width: 1060px;
+}
+
+.cover-header {
+    display: flex;
+    align-items: center;
+    gap: 241px;
+    padding: 35px 0;
+}
+
+.header-munu-items {
+    display: flex;
+    list-style-type: none;
+    gap: 35px;
+
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.main-content {
+    max-width: 494px;
+    margin: 0;
+    padding-top: 37px;
+}
+
+.main-text {
+    color: #130E27;
+    font-family: 'Montserrat';
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 82px;
+    /* 91.111% */
+    letter-spacing: -1.8px;
+    min-width: 533px;
+    padding-bottom: 50px;
+}
+
+.main-text-wite {
+    color: #FFF;
+}
+
+.main-paragraf {
+    color: #FFF;
+    font-family: PT Serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+    letter-spacing: -0.4px;
+    padding-bottom: 180px;
 }
