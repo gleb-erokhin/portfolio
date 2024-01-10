@@ -1,5 +1,10 @@
-body {
+* {
     margin: 0;
+}
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
     /* padding: 0; */
 }
 
@@ -9,22 +14,25 @@ body {
 } */
 
 .header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/main/header.jpg);
-    background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 25px;
+
+    width: 100%;
+    height: 100vh;
+    
+    background-image: url(../img/main/header.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
 
 .header-title {
     color: #FFF;
     text-align: center;
-    font-family: 'Montserrat';
+    
     font-size: 56px;
     font-weight: 700;
     line-height: 130%;
@@ -34,11 +42,9 @@ body {
 .header-paragraf {
     color: #FFF;
     text-align: center;
-    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
-    /* 24px */
     letter-spacing: 3.2px;
     text-transform: uppercase;
 }
