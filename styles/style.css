@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: calc(50% - 1440px / 2);
+    padding-right: calc(50% - 1440px / 2);
+}
+
+.header {
+    height: 100vh;
+    background-image: url(../img/main/header.jpg);
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.header-title {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 130%;
+    /* 72.8px */
+}
+
+.header-paragraf {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    padding-top: 80px;
+}
+
+.portfolio-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
