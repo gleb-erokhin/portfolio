@@ -1,120 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles/style.css">
-        <link rel="stylesheet" href="./styles/media.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-        <title>Главная</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Главная</title>
+</head>
 
-    <body>
-        <!-- id нужен чтобы скрипт js понимал где проигрывать видео -->
-        <header class="header" id="header">
-            <h1 class="header-title">
-                Ерохин Глеб
-            </h1>
-            <p class="header-paragraf">
-                Веб-разработчик, <br> создание сайтов
-            </p>
-        </header>
+<body>
+    <!-- id нужен чтобы скрипт js понимал где проигрывать видео -->
+    <header class="header" id="header">
+        <h1 class="header-title">
+            Ерохин Глеб
+        </h1>
+        <p class="header-paragraf">
+            Веб-разработчик, <br> создание сайтов
+        </p>
+        <div class="header-arrow">
+            <a href="#portfolio">
+                <img src="./img/main/arrow.svg" alt="стрелка вниз">
+            </a>
+        </div>
+    </header>
 
-        <section class="portfolio">
-            <div class="container">
-                <h2 class="portfolio-header">Портфолио</h2>
-                <!-- portfolio-cards -->
-                <div class="portfolio-cards">
-                    <!-- card -->
-                    <div class="portfolio-card">
-                        <a href="./yaht.html" class="card-link">
-                            <img class="card-img" src="./img/main/yaht.png" width="500" alt="">
-                            <h3 class="card-title">Учебный курс HTML Acadamy</h3>
-                            <p class="card-paragraf">Страница яхт клуба</p>
-                        </a>
-                    </div>
-                    <!-- // card -->
-
-                    <!-- card -->
-                    <div class="portfolio-card">
-                        <a href="./projects/tasktracker.html" class="card-link">
-                            <img class="card-img" src="./img/main/lend.png" width="500" alt="">
-                            <h3 class="card-title">Вебинар Вебкадеми</h3>
-                            <p class="card-paragraf">Верстка одностраничного лендинга</p>
-                        </a>
-                    </div>
-                    <!-- // card -->
-
-                    <!-- card -->
-                    <div class="portfolio-card">
-                        <a href="./projects/sell-your-car.html" class="card-link">
-                            <img class="card-img" src="./img/main/sold.png" width="500" alt="">
-                            <h3 class="card-title">Frontent разработчик курс на Stepik</h3>
-                            <p class="card-paragraf">Проверочная работа</p>
-                        </a>
-                    </div>
-                    <!-- // card -->
-
-                    <!-- card -->
-                    <div class="portfolio-card">
-                        <a href="./projects/sail-club.html" class="card-link">
-                            <img class="card-img" src="./img/main/placeholder.png" width="500" alt="">
-                            <h3 class="card-title">название сайта</h3>
-                            <p class="card-paragraf">описание сайта</p>
-                        </a>
-                    </div>
-                    <!-- // card -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="portfolio-header">Портфолио</h2>
+            <!-- portfolio-cards -->
+            <div class="portfolio-cards">
+                <!-- card -->
+                <div class="portfolio-card">
+                    <a href="./yaht.html" class="card-link">
+                        <img class="card-img" src="./img/main/yaht.png" width="500" alt="">
+                        <h3 class="card-title">Учебный курс HTML Acadamy</h3>
+                        <p class="card-paragraf">Страница яхт клуба</p>
+                    </a>
                 </div>
-                <!-- // portfolio-cards -->
-            </div>
-        </section>
+                <!-- // card -->
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-row">
-                    <!-- block -->
-                    <div class="copy footer-column">
-                        <div class="footer-copy-name">Ерохин Глеб</div>
-                        <p class="footer-paragraf">HTML верстка и разработка сайтов</p>
-                    </div>
-                    <!-- // block -->
-
-                    <!-- block -->
-                    <div class="social footer-column">
-                        <p class="social-text">Мои профили в социальных сетях:</p>
-                        <div class="social-icons">
-                            <a href="#"><img src="./img/main/social/inst.svg" alt="instagram"></a>
-                            <a href="#"><img src="./img/main/social/f.svg" alt="instagram"></a>
-                            <a href="https://vk.com/id645309268" target="_blank"><img src="./img/main/social/vk.svg"
-                                    alt="instagram"></a>
-                            <a href="#"><img src="./img/main/social/in.svg" alt="instagram"></a>
-                            <a href="https://github.com/gleb-erokhin" target="_blank"><img
-                                    src="./img/main/social/gh.svg" alt="instagram"></a>
-                        </div>
-                    </div>
-                    <!-- // block -->
-
-                    <!-- block -->
-                    <div class="footer-column">
-                        <a class="footer-button" href="#">Связаться вконтакте</a>
-                        <p class="call-paragraf">
-                            Форма для связи находится в разработке
-                        </p>
-                    </div>
-                    <!-- // block -->
+                <!-- card -->
+                <div class="portfolio-card">
+                    <a href="./projects/tasktracker.html" class="card-link">
+                        <img class="card-img" src="./img/main/lend.png" width="500" alt="">
+                        <h3 class="card-title">Вебинар Вебкадеми</h3>
+                        <p class="card-paragraf">Верстка одностраничного лендинга</p>
+                    </a>
                 </div>
+                <!-- // card -->
+
+                <!-- card -->
+                <div class="portfolio-card">
+                    <a href="./projects/sell-your-car.html" class="card-link">
+                        <img class="card-img" src="./img/main/sold.png" width="500" alt="">
+                        <h3 class="card-title">Frontent разработчик курс на Stepik</h3>
+                        <p class="card-paragraf">Проверочная работа</p>
+                    </a>
+                </div>
+                <!-- // card -->
+
+                <!-- card -->
+                <div class="portfolio-card">
+                    <a href="./projects/sail-club.html" class="card-link">
+                        <img class="card-img" src="./img/main/placeholder.png" width="500" alt="">
+                        <h3 class="card-title">название сайта</h3>
+                        <p class="card-paragraf">описание сайта</p>
+                    </a>
+                </div>
+                <!-- // card -->
             </div>
-        </footer>
+            <!-- // portfolio-cards -->
+        </div>
+    </section>
 
-        <!-- Библиотеки и плагины -->
-        <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
-        <script src="./libs/vide/jquery.vide.min.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <!-- block -->
+                <div class="copy footer-column">
+                    <div class="footer-copy-name">Ерохин Глеб</div>
+                    <p class="footer-paragraf">HTML верстка и разработка сайтов</p>
+                </div>
+                <!-- // block -->
 
-        <!-- Собственный скрипт -->
-        <script src="./js/main.js"></script>
-        
-    </body>
+                <!-- block -->
+                <div class="social footer-column">
+                    <p class="social-text">Мои профили в социальных сетях:</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="./img/main/social/inst.svg" alt="instagram"></a>
+                        <a href="#"><img src="./img/main/social/f.svg" alt="instagram"></a>
+                        <a href="https://vk.com/id645309268" target="_blank"><img src="./img/main/social/vk.svg"
+                                alt="instagram"></a>
+                        <a href="#"><img src="./img/main/social/in.svg" alt="instagram"></a>
+                        <a href="https://github.com/gleb-erokhin" target="_blank"><img src="./img/main/social/gh.svg"
+                                alt="instagram"></a>
+                    </div>
+                </div>
+                <!-- // block -->
+
+                <!-- block -->
+                <div class="footer-column">
+                    <a class="footer-button" href="#">Связаться вконтакте</a>
+                    <p class="call-paragraf">
+                        Форма для связи находится в разработке
+                    </p>
+                </div>
+                <!-- // block -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Библиотеки и плагины -->
+    <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./libs/vide/jquery.vide.min.js"></script>
+
+    <!-- Собственный скрипт -->
+    <script src="./js/main.js"></script>
+
+</body>
+
 </html>
