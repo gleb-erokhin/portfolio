@@ -1,5 +1,10 @@
 /* для разрешения с шириной до 1140px */
 @media (max-width: 1140px) {
+    .portfolio {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
     .portfolio-card {
         /* выставляем ширину карточки в 50% ширины контента + по 15px чтобы между карточками сохранились 30px ширины */
         width: calc(50% - 15px);
@@ -15,4 +20,11 @@
     .header-paragraf {
         font-size: 14px;
     }
+
+    .portfolio-header {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+
 }
