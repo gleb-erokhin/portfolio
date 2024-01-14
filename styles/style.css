@@ -40,7 +40,8 @@ img {
     width: 100%;
     height: 100vh;
 
-    background-image: url(../img/main/header.jpg);
+    /* отключаем фоновую страницу, для включения видео фона */
+    /* background-image: url(../img/main/header.jpg); */
     background-size: cover;
     background-position: center;
 
