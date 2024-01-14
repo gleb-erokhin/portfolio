@@ -13,12 +13,13 @@
     </head>
 
     <body>
-        <header class="header">
+        <!-- id нужен чтобы скрипт js понимал где проигрывать видео -->
+        <header class="header" id="header">
             <h1 class="header-title">
                 Ерохин Глеб
             </h1>
             <p class="header-paragraf">
-                Веб-разработчик, создание сайтов
+                Веб-разработчик, <br> создание сайтов
             </p>
         </header>
 
@@ -107,6 +108,12 @@
                 </div>
             </div>
         </footer>
-    </body>
 
+        <!-- Библиотеки и плагины -->
+        <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
+        <script src="./libs/vide/jquery.vide.min.js"></script>
+
+        <!-- Собственный скрипт -->
+        <script src="./js/main.js"></script>
+    </body>
 </html>
