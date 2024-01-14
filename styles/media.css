@@ -9,6 +9,18 @@
         /* выставляем ширину карточки в 50% ширины контента + по 15px чтобы между карточками сохранились 30px ширины */
         width: calc(50% - 15px);
     }
+
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .footer-row {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
 }
 
 /* для разрешения с шириной до 760px */
@@ -26,5 +38,68 @@
         margin-bottom: 40px;
     }
 
+    .portfolio-cards {
+        justify-content: center;
+    }
 
+    .portfolio-card {
+        width: 100%;
+    }
+
+    .card-link {
+        padding: 15px;
+    }
+
+    .card-img {
+        margin-bottom: 10px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .card-paragraf {
+        font-size: 14px;
+    }
+
+    .footer-copy-name {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .footer-paragraf {
+        font-size: 14px;
+    }
+
+    .social-icons {
+        font-size: 14px;
+    }
+
+    .call-paragraf {
+        margin: 0;
+        padding-top: 15px;
+    }
+
+    .project {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    br {
+        display: initial;
+    }
+
+    .project-header {
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+
+    .project-image {
+        padding-bottom: 20px;
+    }
+
+    .project-info {
+        padding-bottom: 50px;
+    }
 }
