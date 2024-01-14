@@ -7,18 +7,20 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    /* padding: 0; */
 }
 
-/* .center {
-    padding-left: calc(50% - 1440px / 2);
-    padding-right: calc(50% - 1440px / 2);
-} */
+img {
+    /* означает что изображения при изменении разрешения экрана будут всегда оставаться внутри контейнера */
+    width: 100%;
+}
 
 .container {
-    max-width: 1110px;
+    /* max-width: 1110px; */
+    /* для создания адаптива увеличено на 30px ширина, чтобы добавить отступы по 15px для более меньшего разрешения */
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .none {
@@ -193,7 +195,7 @@ body {
     line-height: 44px;
     text-transform: uppercase;
     text-decoration: none;
-    
+
     transition: all 0.2s ease-in;
 }
 
@@ -269,3 +271,4 @@ body {
     background-color: #275BEC;
     color: white;
 }
+
