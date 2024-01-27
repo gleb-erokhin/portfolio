@@ -6,7 +6,7 @@
     --base-color-active: #A3D200;
     --border-color: #E3E3E3;
     --placeholder-color: #8D8D8D;
-
+    --transition-duration: .3s;
 }
 
 html {
@@ -42,11 +42,34 @@ a {
     padding: 40px 15px;
 }
 
+/* ссылка */
+.default-link {
+    font-size: 20px;
+    color: var(--black-color);
+    text-decoration: underline;
+    transform: color var(--transition-duration), background-color var(--transition-duration);
+}
+
+.default-link:focus-visible {
+    outline: none;
+    background-color: var(--base-color);
+}
+
+.default-link:hover {
+    color: var(--base-color-hover);
+}
+
+.default-link:active {
+    color: var(--base-color-active);
+}
+
+/* кнопка */
+.default-btn {
+    
+}
+
 /* Медиа запрос */
 /* если нет планшетной верстки, принимаем решение сами на каком разреение будет меняться сайт */
 @media (max-width: 740px) {
-    body {
 
-        background-color: red;
-    }
 }
