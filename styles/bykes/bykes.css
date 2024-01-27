@@ -114,8 +114,7 @@ a {
 }
 
 /* Меню */
-.menu {
-}
+.menu {}
 
 .menu__list {
     display: flex;
@@ -273,7 +272,32 @@ a {
     background-color: var(--base-color-active);
 }
 
+/* Главный блок */
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 
+.hero__content {
+    flex-basis: 490px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hero__title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero__desc {
+    font-size: 20px;
+    max-width: 360px;
+    margin-bottom: 48px;
+}
 
 /* Медиа запрос */
 /* если нет планшетной верстки, принимаем решение сами на каком разреение будет меняться сайт */
@@ -327,7 +351,7 @@ a {
         padding-left: 0;
         padding-right: 0;
     }
-    
+
     .header__logo {
         display: flex;
         justify-content: center;
@@ -346,5 +370,21 @@ a {
         width: fit-content;
     }
 
+    /* Главный блок */
+    .hero__container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 
+    .hero__content {
+        flex-basis: 290px;
+    }
+
+    .hero__main-img {
+        display: none;
+    }
+
+    .hero__title {
+        font-size: 28px;
+    }
 }
