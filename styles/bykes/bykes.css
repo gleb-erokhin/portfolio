@@ -1,0 +1,52 @@
+/* стилизация по умолчанию */
+:root {
+    --black-color: #263238;
+    --base-color: #BAEF00;
+    --base-color-hover: #D9FF56;
+    --base-color-active: #A3D200;
+    --border-color: #E3E3E3;
+    --placeholder-color: #8D8D8D;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    /* основа как у родителя */
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: var(--black-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* block container */
+.container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 15px;
+}
+
+/* Медиа запрос */
+/* если нет планшетной верстки, принимаем решение сами на каком разреение будет меняться сайт */
+@media (max-width: 740px) {
+    body {
+
+        background-color: red;
+    }
+}
