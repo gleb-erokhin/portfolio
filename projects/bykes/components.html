@@ -7,6 +7,11 @@
         <link rel="stylesheet" href="/styles/bykes/bykes.css">
         <link rel="stylesheet" href="/styles/bykes/normalize.css">
         <title>Компоненты</title>
+        <style>
+            body {
+                background-color: gray;
+            }
+        </style>
     </head>
 
     <body>
@@ -57,14 +62,25 @@
                 <li>
                     <p>форма обратной связи</p>
                     <form action="#" class="callback-form">
-                        <input type="tel" name="tel" class="text-field callback-form__inp" placeholder="Подсказка">
+                        <input type="tel" name="tel" class="text-field callback-form__inp" placeholder="телефон">
                         <button type="submit" class="default-btn callback-form__btn">Отправить</button>
                     </form>
                 </li>
+                <li>
+                    <p></p>
+                    <article class="product-card">
+                        <img class="product-card__img" src="/img/bykes/byke.jpg" alt="photo">
+                        <div class="product-card__body">
+                            <div class="product-card__body-top">
+                                <h3 class="product-card__title">Велосипед BMX
+                                Tech Team Goof 20</h3>
+                                <strong class="product-card__price">12 830 руб</strong>
+                            </div>
+                            <button class="default-btn product-card__btn">Кнопка</button>
+                        </div>
+                    </article>
+                </li>
             </ul>
-
-
         </div>
     </body>
-
 </html>
