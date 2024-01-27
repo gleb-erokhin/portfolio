@@ -36,6 +36,10 @@ a {
     text-decoration: none;
 }
 
+ul > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* ссылка */
 .default-link {
@@ -221,14 +225,19 @@ a {
 .product-card__body_big {
     position: absolute;
     bottom: 0;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.50);
     border-radius: 12px;
     color: white;
-    width: 100%;
+    align-items: flex-start;
 }
 
 .product-card__price_big {
     color: white;
+}
+
+.product-card__btn_big {
+    width: initial;
 }
 
 /* block container */
@@ -278,5 +287,9 @@ a {
 
     .product-card__img_big {
         height: 100%;
+    }
+
+    .product-card__btn_big {
+        width: 100%;
     }
 }

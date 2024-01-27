@@ -1,100 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/styles/bykes/bykes.css">
-        <link rel="stylesheet" href="/styles/bykes/normalize.css">
-        <title>Компоненты</title>
-        <style>
-            body {
-                background-color: gray;
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/bykes/bykes.css">
+    <link rel="stylesheet" href="/styles/bykes/normalize.css">
+    <title>Компоненты</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
 
-    <body>
-        <div class="container">
-            <h1>План работы</h1>
-            <p>
-                1. Для работы сначала осматриваем макет и выираем в нем основные блоки по БЭМ. Выделяем как текстовые
-                блоки так
-                и карточки, всё то что можно будет использовать повторно.
-            </p>
-            <ul>
-                <li>Выбираем ссылку <br>
-                    <a class="default-link" href="#">Ссылка</a>
-                </li>
-                <li>Выбираем кнопку <br>
-                    <button class="default-btn">Кнопка</button>
-                    <p></p>
-                    <a class="default-btn">Ссылка</a>
-                </li>
-                <li>выбираем поле ввода
-                    <input class="text-field" type="text" placeholder="Подсказка">
-                </li>
-                <li>заголовок
-                    <h2 class="subtitle">Каталог</h2>
-                </li>
-                <li>
-                    <img src="/img/bykes/logo.svg" class="logo" width="154" alt="велошоп">
-                </li>
-                <li>
-                    <p>Меню главное</p>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Каталог</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Новинки</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Заказать</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </li>
-                <li>
-                    <p>форма обратной связи</p>
-                    <form action="#" class="callback-form">
-                        <input type="tel" name="tel" class="text-field callback-form__inp" placeholder="телефон">
-                        <button type="submit" class="default-btn callback-form__btn">Отправить</button>
-                    </form>
-                </li>
-                <li>
-                    <p></p>
-                    <article class="product-card">
-                        <img class="product-card__img" src="/img/bykes/1.jpg" alt="photo">
-                        <div class="product-card__body">
-                            <div class="product-card__body-top">
-                                <h3 class="product-card__title">Велосипед BMX
-                                    Tech Team Goof 20</h3>
-                                <strong class="product-card__price">12 830 руб</strong>
-                            </div>
-                            <button class="default-btn product-card__btn">Кнопка</button>
+<body>
+    <div class="container">
+        <h1>План работы</h1>
+        <p>
+            1. Для работы сначала осматриваем макет и выираем в нем основные блоки по БЭМ. Выделяем как текстовые
+            блоки так
+            и карточки, всё то что можно будет использовать повторно.
+        </p>
+        <ul>
+            <li>Выбираем ссылку <br>
+                <a class="default-link" href="#">Ссылка</a>
+            </li>
+            <li>Выбираем кнопку <br>
+                <button class="default-btn">Кнопка</button>
+                <p></p>
+            </li>
+            <li><a class="default-btn">Ссылка</a></li>
+            <li>выбираем поле ввода <br>
+                <input class="text-field" type="text" placeholder="Подсказка">
+            </li>
+            <li>заголовок
+                <h2 class="subtitle">Каталог</h2>
+            </li>
+            <li>
+                <img src="/img/bykes/logo.svg" class="logo" width="154" alt="велошоп">
+            </li>
+            <li>
+                <p>Меню главное</p>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Каталог</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Новинки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Заказать</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </li>
+            <li>
+                <p>форма обратной связи</p>
+                <form action="#" class="callback-form">
+                    <input type="tel" name="tel" class="text-field callback-form__inp" placeholder="телефон">
+                    <button type="submit" class="default-btn callback-form__btn">Отправить</button>
+                </form>
+            </li>
+            <li>
+                <p></p>
+                <article class="product-card">
+                    <img class="product-card__img" src="/img/bykes/1.jpg" alt="photo">
+                    <div class="product-card__body">
+                        <div class="product-card__body-top">
+                            <h3 class="product-card__title">Велосипед BMX
+                                Tech Team Goof 20</h3>
+                            <strong class="product-card__price">12 830 руб</strong>
                         </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="product-card product-card_big">
-                        <img class="product-card__img product-card__img_big" src="/img/bykes/3.jpg" alt="photo">
-                        <div class="product-card__body product-card__body_big">
-                            <div class="product-card__body-top product-card__body-top_big">
-                                <h3 class="product-card__title">Велосипед BMX
-                                    Tech Team Goof 20</h3>
-                                <strong class="product-card__price product-card__price_big">12 830 руб</strong>
-                            </div>
-                            <button class="default-btn product-card__btn">Кнопка</button>
+                        <button class="default-btn product-card__btn">Купить</button>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="product-card product-card_big">
+                    <img class="product-card__img product-card__img_big" src="/img/bykes/3.jpg" alt="photo">
+                    <div class="product-card__body product-card__body_big">
+                        <div class="product-card__body-top product-card__body-top_big">
+                            <h3 class="product-card__title">Велосипед BMX
+                                Tech Team Goof 20</h3>
+                            <strong class="product-card__price product-card__price_big">12 830 руб</strong>
                         </div>
-                    </article>
-                </li>
-            </ul>
-        </div>
-    </body>
+                        <button class="default-btn product-card__btn product-card__btn_big">Купить</button>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </div>
+</body>
 
 </html>
