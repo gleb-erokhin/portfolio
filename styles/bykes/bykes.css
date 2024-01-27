@@ -20,12 +20,13 @@ html {
     /* основа как у родителя */
     box-sizing: inherit;
     margin: 0;
+    padding: 0;
 }
 
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--black-color);
+    background-color: white;
 }
 
 img {
@@ -34,11 +35,6 @@ img {
 
 a {
     text-decoration: none;
-}
-
-ul > li {
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 /* ссылка */
@@ -119,7 +115,6 @@ ul > li {
 
 /* Меню */
 .menu {
-    background-color: #8D8D8D;
 }
 
 .menu__list {
@@ -242,10 +237,43 @@ ul > li {
 
 /* block container */
 .container {
-    max-width: 780px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 15px;
+    padding: 0 15px;
 }
+
+/* шапка сайта */
+.header {
+    background-color: var(--black-color);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: block;
+    padding: 22px;
+    background-color: var(--base-color);
+    outline: none;
+    transition: opacity var(--transition-duration), background-color var(--transition-duration);
+}
+
+.header__logo:focus-visible {
+    opacity: .8;
+}
+
+.header__logo:hover {
+    background-color: var(--base-color-hover);
+}
+
+.header__logo:active {
+    background-color: var(--base-color-active);
+}
+
+
 
 /* Медиа запрос */
 /* если нет планшетной верстки, принимаем решение сами на каком разреение будет меняться сайт */
@@ -292,4 +320,31 @@ ul > li {
     .product-card__btn_big {
         width: 100%;
     }
+
+    /* шапка сайта */
+    .header__container {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .header__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__menu {
+        padding-top: 22px;
+        padding-bottom: 22px;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .header__menu_list {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: fit-content;
+    }
+
+
 }
