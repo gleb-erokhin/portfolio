@@ -83,19 +83,19 @@ a {
 }
 
 /* Поле ввода */
-.input-field {
+.text-field {
     outline: none;
-    padding: 11px 47px 11px 16px;
+    padding: 11px 16px 11px 16px;
     border-radius: 12px;
     border: 1px solid var(--placeholder-color);
     transition: border-color var(--transition-duration);
 }
 
-.input-field::placeholder {
+.text-field::placeholder {
     color: var(--placeholder-color);
 }
 
-.input-field:focus {
+.text-field:focus {
     border-color: var(--base-color);
 }
 
@@ -112,6 +112,51 @@ a {
     width: 154px;
 }
 
+/* Меню */
+.menu {
+    background-color: #8D8D8D;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu__item {}
+
+.menu__link {
+    color: white;
+    transition: outline-color var(--transition-duration), background-color var(--transition-duration);
+    outline: none;
+}
+
+.menu__link:focus-visible {
+    outline: none;
+    color: var(--black-color);
+    background-color: var(--base-color);
+}
+
+.menu__link:hover {
+    color: var(--base-color-hover);
+}
+
+.menu__link:active {
+    color: var(--base-color-active);
+}
+
+/* форма обратной связи */
+.callback-form {
+    display: flex;
+    gap: 16px;
+}
+
+.callback-form__inp {
+    flex-basis: 288px;
+}
+
 /* block container */
 .container {
     max-width: 780px;
@@ -121,4 +166,14 @@ a {
 
 /* Медиа запрос */
 /* если нет планшетной верстки, принимаем решение сами на каком разреение будет меняться сайт */
-@media (max-width: 740px) {}
+@media (max-width: 740px) {
+
+    /* форма обратной связи */
+    .callback-form {
+        flex-direction: column;
+    }
+
+    .callback-form__inp {
+        flex-basis: inherit;
+    }
+}
