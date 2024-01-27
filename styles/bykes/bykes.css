@@ -35,12 +35,6 @@ a {
     text-decoration: none;
 }
 
-/* block container */
-.container {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 40px 15px;
-}
 
 /* ссылка */
 .default-link {
@@ -103,6 +97,26 @@ a {
 
 .input-field:focus {
     border-color: var(--base-color);
+}
+
+/* Заголовок */
+.subtitle {
+    margin: 0;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+/* Логотип */
+.logo {
+    width: 154px;
+}
+
+/* block container */
+.container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 15px;
 }
 
 /* Медиа запрос */
