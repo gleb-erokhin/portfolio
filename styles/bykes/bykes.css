@@ -207,6 +207,30 @@ a {
     width: 100%;
 }
 
+.product-card_big {
+    border: none;
+    position: relative;
+    height: 350px;
+}
+
+.product-card__img_big {
+    height: 100%;
+    border-radius: 12px;
+}
+
+.product-card__body_big {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 12px;
+    color: white;
+    width: 100%;
+}
+
+.product-card__price_big {
+    color: white;
+}
+
 /* block container */
 .container {
     max-width: 780px;
@@ -250,5 +274,9 @@ a {
 
     .product-card__btn {
         width: 100%;
+    }
+
+    .product-card__img_big {
+        height: 100%;
     }
 }
