@@ -194,6 +194,11 @@ img {
     gap: 30px;
 }
 
+.social-link {
+    color: white;
+    text-decoration: none;
+}
+
 .footer-button {
     display: inline-block;
     height: 50px;
