@@ -253,21 +253,8 @@ br {
 }
 
 .project-image {
-    padding-bottom: 70px;
-    height: 100vh;
-}
-
-.project-image {
-    position: relative;
-}
-
-.project-image__img {
-    position: absolute;
-}
-
-.project-image_two {
-    top: 100;
-    display: none;
+    padding-bottom: 30px;
+    /* height: 100vh; */
 }
 
 .project-info {
