@@ -1,126 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/media.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Главная</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/media.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Главная</title>
+    </head>
 
-<body>
-    <!-- id нужен чтобы скрипт js понимал где проигрывать видео -->
-    <header class="header" id="header">
-        <h1 class="header-title">
-            Ерохин Глеб
-        </h1>
-        <p class="header-paragraf">
-            Веб-разработчик, <br> создание сайтов
-        </p>
-        <div class="header-arrow">
-            <a href="#portfolio">
-                <img src="./img/arrow.svg" alt="стрелка вниз">
-            </a>
-        </div>
-    </header>
-
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <h2 class="portfolio-header">Портфолио</h2>
-            <!-- portfolio-cards -->
-            <div class="portfolio-cards">
-                <!-- card 1-->
-                <div class="portfolio-card">
-                    <a href="./cards/yaht.html" class="card-link">
-                        <img class="card-img" src="./img/yaht.png" width="500"  alt="">
-                        <h3 class="card-title">Учебный курс HTML Acadamy</h3>
-                        <p class="card-paragraf">Страница яхт клуба</p>
-                    </a>
-                </div>
-                <!-- // card 1-->
-
-                <!-- card 2-->
-                <div class="portfolio-card">
-                    <a href="./cards/bike.html" class="card-link">
-                        <img class="card-img" src="./projects/bykes/img/product-big.png" width="500"  alt="">
-                        <h3 class="card-title">Сайт велосипеды</h3>
-                        <p class="card-paragraf">Сайт интенрет магазина "Велосипеды"</p>
-                    </a>
-                </div>
-                <!-- // card 2-->
-
-                <!-- card 3-->
-                <div class="portfolio-card">
-                    <a href="./cards/the-brand.html" class="card-link">
-                        <img class="card-img" src="./img/the-brand.png" width="500"  alt="">
-                        <h3 class="card-title">Учебный сайт на курсе GeekBrains</h3>
-                        <p class="card-paragraf">Лендинг, с адаптивом до 320px</p>
-                    </a>
-                </div>
-                <!-- // card 3-->
-
-                <!-- card 4-->
-                <div class="portfolio-card">
-                    <a href=".//cards/the-brand-pro.html" class="card-link">
-                        <img class="card-img" src="./img/the-brand-pro.png" width="500"  alt="">
-                        <h3 class="card-title">Многостраничный сайт на курсе GeekBrains</h3>
-                        <p class="card-paragraf">Без адаптива, включает страницы корзина, продукты</p>
-                    </a>
-                </div>
-                <!-- // card 4-->
+    <body>
+        <!-- id нужен чтобы скрипт js понимал где проигрывать видео -->
+        <header class="header" id="header">
+            <h1 class="header-title">
+                Ерохин Глеб
+            </h1>
+            <p class="header-paragraf">
+                Веб-разработчик, <br> создание сайтов
+            </p>
+            <div class="header-arrow">
+                <a href="#portfolio">
+                    <img src="./img/arrow.svg" alt="стрелка вниз">
+                </a>
             </div>
-            <!-- // portfolio-cards -->
-        </div>
-    </section>
+        </header>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-row">
-                <!-- block name-->
-                <div class="copy footer-column">
-                    <div class="footer-copy-name">Ерохин Глеб</div>
-                    <p class="footer-paragraf">HTML верстка и разработка сайтов</p>
-                </div>
-                <!-- // block -->
-
-                <!-- block social-->
-                <div class="social footer-column">
-                    <p class="social-text">Мои профили в социальных сетях:</p>
-                    <div class="social-icons">
-                        <a href="#"><img src="./img/social/inst.svg" alt="instagram"></a>
-                        <a href="#"><img src="./img/social/f.svg" alt="instagram"></a>
-                        <a href="https://vk.com/id645309268" target="_blank"><img src="./img/social/vk.svg"
-                                alt="instagram"></a>
-                        <a href="#"><img src="./img/social/in.svg" alt="instagram"></a>
-                        <a href="https://github.com/gleb-erokhin" target="_blank"><img src="./img/social/gh.svg"
-                                alt="instagram"></a>
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="portfolio-header">Портфолио</h2>
+                <!-- portfolio-cards -->
+                <div class="portfolio-cards">
+                    <!-- card 1-->
+                    <div class="portfolio-card c1">
+                        <a href="./cards/yaht.html" class="card-link">
+                            <img class="card-img" src="./img/yaht.png" width="500" alt="">
+                            <h3 class="card-title">Учебный курс HTML Acadamy</h3>
+                            <p class="card-paragraf">Страница яхт клуба</p>
+                        </a>
                     </div>
-                </div>
-                <!-- // block -->
+                    <!-- // card 1-->
 
-                <!-- block contact-->
-                <div class="footer-column">
-                    <a class="footer-button" href="#">Связаться вконтакте</a>
-                    <p class="call-paragraf">
-                        Форма для связи находится в разработке
-                    </p>
+                    <!-- card 2-->
+                    <div class="portfolio-card c2">
+                        <a href="./cards/bike.html" class="card-link">
+                            <img class="card-img" src="./projects/bykes/img/product-big.png" width="500" alt="">
+                            <h3 class="card-title">Сайт велосипеды</h3>
+                            <p class="card-paragraf">Сайт интенрет магазина "Велосипеды"</p>
+                        </a>
+                    </div>
+                    <!-- // card 2-->
+
+                    <!-- card 3-->
+                    <div class="portfolio-card c3">
+                        <a href="./cards/the-brand.html" class="card-link">
+                            <img class="card-img" src="./img/the-brand.png" width="500" alt="">
+                            <h3 class="card-title">Учебный сайт на курсе GeekBrains</h3>
+                            <p class="card-paragraf">Лендинг, с адаптивом до 320px</p>
+                        </a>
+                    </div>
+                    <!-- // card 3-->
+
+                    <!-- card 4-->
+                    <div class="portfolio-card c4">
+                        <a href=".//cards/the-brand-pro.html" class="card-link">
+                            <img class="card-img" src="./img/the-brand-pro.png" width="500" alt="">
+                            <h3 class="card-title">Многостраничный сайт на курсе GeekBrains</h3>
+                            <p class="card-paragraf">Без адаптива, включает страницы корзина, продукты</p>
+                        </a>
+                    </div>
+                    <!-- // card 4-->
+
+                    <!-- card 5-->
+                    <div class="portfolio-card c5">
+                        <a href=".//cards/fengo.html" class="card-link">
+                            <img class="card-img" src="./img/fengo.jpg" width="500" alt="">
+                            <h3 class="card-title">Лендинг с адаптивом, усложненное задание GeekBrains</h3>
+                            <p class="card-paragraf">Адаптив, карточки товаров, карусель, блоки карточек.</p>
+                        </a>
+                    </div>
+                    <!-- // card 5-->
+
+                    <!-- card 6-->
+                    <div class="portfolio-card c6">
+                        <a href=".//cards/the-brand-pro.html" class="card-link">
+                            <img class="card-img" src="./img/placeholder.png" width="500" alt="">
+                            <h3 class="card-title">blank</h3>
+                            <p class="card-paragraf">Lorem ipsum dolor sit amet.</p>
+                        </a>
+                    </div>
+                    <!-- // card 6-->
                 </div>
-                <!-- // block -->
+                <!-- // portfolio-cards -->
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <!-- Библиотеки и плагины -->
-    <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
-    <script src="./libs/vide/jquery.vide.min.js"></script>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <!-- block name-->
+                    <div class="copy footer-column">
+                        <div class="footer-copy-name">Ерохин Глеб</div>
+                        <p class="footer-paragraf">HTML верстка и разработка сайтов</p>
+                    </div>
+                    <!-- // block -->
 
-    <!-- Собственный скрипт -->
-    <script src="./js/main.js"></script>
+                    <!-- block social-->
+                    <div class="social footer-column">
+                        <p class="social-text">Мои профили в социальных сетях:</p>
+                        <div class="social-icons">
+                            <a href="#"><img src="./img/social/inst.svg" alt="instagram"></a>
+                            <a href="#"><img src="./img/social/f.svg" alt="instagram"></a>
+                            <a href="https://vk.com/id645309268" target="_blank"><img src="./img/social/vk.svg"
+                                    alt="instagram"></a>
+                            <a href="#"><img src="./img/social/in.svg" alt="instagram"></a>
+                            <a href="https://github.com/gleb-erokhin" target="_blank"><img src="./img/social/gh.svg"
+                                    alt="instagram"></a>
+                        </div>
+                    </div>
+                    <!-- // block -->
 
-</body>
+                    <!-- block contact-->
+                    <div class="footer-column">
+                        <a class="footer-button" href="#">Связаться вконтакте</a>
+                        <p class="call-paragraf">
+                            Форма для связи находится в разработке
+                        </p>
+                    </div>
+                    <!-- // block -->
+                </div>
+            </div>
+        </footer>
+
+        <!-- Библиотеки и плагины -->
+        <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
+        <script src="./libs/vide/jquery.vide.min.js"></script>
+
+        <!-- Собственный скрипт -->
+        <script src="./js/main.js"></script>
+
+    </body>
 
 </html>
