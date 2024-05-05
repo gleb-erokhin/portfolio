@@ -1,3 +1,50 @@
 * {
+}
+
+body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 55px;
+    margin-bottom: 40px;
+}
+
+.main-header__nav {
+    display: flex;
+    /* align-items: center; */
+}
+
+.logo {
+    width: 64px;
+    margin-right: 470px;
+}
+
+.site-navigation {
+    width: 560px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sigin {
+    width: 36px;
+    margin-left: auto;
+}
+
+.main-content {
+    padding-top: 0;
+}
+.hero {
+    margin-bottom: 120px;
+}
+
+.hero__title {
+    margin: 0;
+    padding-left: 70px;
+    padding-bottom: 40px;
 }
