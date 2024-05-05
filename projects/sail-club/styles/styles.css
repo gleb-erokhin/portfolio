@@ -7,6 +7,10 @@ body {
     box-sizing: border-box;
 }
 
+p, h2 {
+    margin: 0;
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -25,7 +29,7 @@ body {
 }
 
 .site-navigation {
-    width: 560px;
+    width: 565px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -47,4 +51,34 @@ body {
     margin: 0;
     padding-left: 70px;
     padding-bottom: 40px;
+}
+
+.blog-article {
+    display: flex;
+    width: 1030px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.order {
+    flex-direction: row-reverse;
+}
+
+.blog-article__date {
+    padding-bottom: 10px;
+}
+
+.blog-article__title {
+    width: 356px;
+    padding-bottom: 15px;
+    margin-bottom: 19px;
+    border-bottom: 2px solid #00C6BD;
+}
+
+.blog-article__content {
+    width: 400px;
+}
+
+.margin-bottom-120 {
+    margin-bottom: 120px;
 }
