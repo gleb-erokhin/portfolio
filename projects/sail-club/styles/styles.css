@@ -97,3 +97,16 @@ h2 {
 .blog-article-img {
     width: 600px;
 }
+
+.news {
+    max-width: 770px;
+    margin: auto;
+}
+
+.news-main__img {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
