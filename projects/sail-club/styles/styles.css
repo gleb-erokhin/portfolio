@@ -126,7 +126,7 @@ h2 {
     padding-bottom: 30px;
 }
 
-.news__content-items + p {
+.news__content-items+p {
     padding-bottom: 38px;
 }
 
@@ -150,11 +150,11 @@ h2 {
     padding-bottom: 30px;
 }
 
-.news__content-slogan + p {
+.news__content-slogan+p {
     padding-bottom: 40px;
 }
 
-.news__header + .news__content-paragraf {
+.news__header+.news__content-paragraf {
     padding-bottom: 12px;
 }
 
@@ -177,8 +177,7 @@ h2 {
     padding-bottom: 20px;
 }
 
-.contacts__header {
-}
+.contacts__header {}
 
 .contacts__data li {
     padding-bottom: 15px;
@@ -194,4 +193,45 @@ h2 {
 
 .contacts__img {
     width: 684px;
+}
+
+/* футер */
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.main-footer__left {
+    width: 175px;
+}
+
+.main-footer__info {
+    font-size: 10px;
+}
+
+.main-footer__logo {
+    padding-bottom: 30px;
+}
+
+.policy {
+    padding-bottom: 8px;
+}
+
+.main-footer__right {
+    width: 870px;
+}
+
+.footer-navigation-topics {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+}
+
+.footer-navigation {
+    padding: 0;
+    list-style: none;
 }
