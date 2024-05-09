@@ -118,35 +118,43 @@ h2 {
     padding-bottom: 17px;
 }
 
-.news-content-items li {
+.news__content-items li {
     padding-bottom: 8px;
 }
 
-.padding_bottom-33 {
+.news__content-items {
+    padding-bottom: 30px;
+}
+
+.news__content-items + p {
+    padding-bottom: 38px;
+}
+
+.news__about {
     padding-bottom: 33px;
 }
 
-.padding_bottom-27 {
+.news__header {
     padding-bottom: 27px;
 }
 
-.padding_bottom-24 {
+.news__content-paragraf {
     padding-bottom: 24px;
 }
 
-.padding_bottom-19 {
-    margin-bottom: 19px;
-}
-
-.padding_bottom-15 {
+.news__content-title {
     margin-bottom: 15px;
 }
 
-.padding_bottom-8 {
-    margin-bottom: 8px;
+.news__content-slogan {
+    padding-bottom: 30px;
 }
 
-.padding_bottom-12 {
+.news__content-slogan + p {
+    padding-bottom: 40px;
+}
+
+.news__header + .news__content-paragraf {
     padding-bottom: 12px;
 
 }
