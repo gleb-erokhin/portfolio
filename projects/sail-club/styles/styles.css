@@ -156,5 +156,42 @@ h2 {
 
 .news__header + .news__content-paragraf {
     padding-bottom: 12px;
+}
 
+/* Блок адреса и карта */
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts__wrappeer {
+    width: 245px;
+}
+
+.contacts__padding {
+    padding-bottom: 20px;
+}
+
+.contacts__header {
+}
+
+.contacts__data li {
+    padding-bottom: 15px;
+}
+
+.contacts__data-item {}
+
+.contacts__data-header {}
+
+.phone {}
+
+.E-mail {}
+
+.contacts__img {
+    width: 684px;
 }
