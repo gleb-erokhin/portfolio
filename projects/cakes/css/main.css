@@ -7,6 +7,12 @@
     background-color: #fbebea;
 }
 
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 74px;
+}
+
 a {
     color: #2d2829;
     text-decoration: none;
@@ -43,6 +49,7 @@ a {
 .page__text {
     font-size: 20px;
     line-height: 135%;
+    font-style: normal;
 }
 
 svg {
@@ -94,6 +101,12 @@ svg {
     background-position: left center;
 }
 
+.adventage .page__subtitle {
+    font-style: italic;
+    font-size: 30px;
+    line-height: 133%;
+}
+
 /* блок отзывы */
 .reviews .page__heading3 {
     font-weight: 700;
@@ -104,4 +117,27 @@ svg {
 .page__desc {
     font-size: 25px;
     line-height: 132%;
+}
+
+/* контакты */
+.social__item {
+    background-color: #ffffff;
+}
+
+/* подвал */
+.footer {
+    background-color: #e8e8e8;
+}
+
+.footer a {
+    font-size: 13px;
+    line-height: 123%;
+    text-transform: none;
+}
+
+.copy {
+    font-size: 13px;
+    line-height: 123%;
+    text-transform: uppercase;
+    color: #888;
 }
