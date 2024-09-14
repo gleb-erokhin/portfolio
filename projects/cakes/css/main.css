@@ -18,6 +18,17 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
 .page__heading1 {
     font-weight: 700;
     font-size: 78px;
@@ -57,11 +68,41 @@ svg {
 }
 
 /* основной код */
+.page__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    margin-right: 285px;
+}
+
+.logo {
+    margin-right: 45px;
+}
+
+.site-navigation {
+    display: flex;
+    gap: 40px;
+}
 
 .phone {
     font-weight: 700;
     font-size: 13px;
     line-height: 123%;
+    align-items: end;
 }
 
 .site-navigation__item a {
@@ -72,6 +113,31 @@ svg {
 
 .site-navigation__item a.active {
     color: #f50049;
+}
+
+.main {
+    margin-top: 25px;
+}
+
+.main__hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__hero .page__heading1 {
+    width: 314px;
+}
+
+.main__text-block {
+    width: 464px;
+}
+
+.main__text-block .page__heading1 {
+    margin-top: 130px;
+}
+.main__text-block .page__subtitle {
+    margin-top: 25px;
+    margin-bottom: 75px;
 }
 
 .btn {
@@ -87,6 +153,12 @@ svg {
     height: 51px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
     background: #f50049;
+}
+
+.features {
+    margin-top: 114px;
+    display: flex;
+    gap: 105px;
 }
 
 .card__link {

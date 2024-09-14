@@ -16,31 +16,35 @@
     <body class="page">
         <div class="wrapper">
             <header class="page__header">
-                <nav class="header__nav">
-                    <p class="logo">
-                        <img src="./img/logo.svg" alt="logo">
-                    </p>
-                    <ul class="site-navigation">
-                        <li class="site-navigation__item"><a href="#">наши торты</a></li>
-                        <li class="site-navigation__item"><a class="active" href="#">индивидуальный заказ</a></li>
-                        <li class="site-navigation__item"><a href="#">отзывы</a></li>
-                        <li class="site-navigation__item"><a href="#">о нас</a></li>
-                        <li class="site-navigation__item"><a href="#">как заказать</a></li>
-                        <li class="site-navigation__item"><a href="#">контакты</a></li>
-                    </ul>
+                <div class="header__left">
+                    <img class="logo" width="68" height="20" src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="header__right">
+                    <nav class="header__nav">
+                        <ul class="site-navigation">
+                            <li class="site-navigation__item"><a href="#">наши торты</a></li>
+                            <li class="site-navigation__item"><a class="active" href="#">индивидуальный заказ</a></li>
+                            <li class="site-navigation__item"><a href="#">отзывы</a></li>
+                            <li class="site-navigation__item"><a href="#">о нас</a></li>
+                            <li class="site-navigation__item"><a href="#">как заказать</a></li>
+                            <li class="site-navigation__item"><a href="#">контакты</a></li>
+                        </ul>
+                    </nav>
                     <a class="phone" href="tel:+79068999206">+7 906 899 9206</a>
-                </nav>
+                </div>
             </header>
             <main class="main">
                 <section class="main__hero">
-                    <h1 class="page__heading1">Торты на заказ</h1>
-                    <p class="page__subtitle">Ручная работа</p>
+                    <div class="main__text-block">
+                        <h1 class="page__heading1">Торты на заказ</h1>
+                        <p class="page__subtitle">Ручная работа</p>
+                        <a class="btn" href="#">Выбрать торт</a>
+                        <ul class="features">
+                            <li class="features__item">Натуральные ингредиенты</li>
+                            <li class="features__item">Доставка бесплатно при заказе от 2000 рублей*</li>
+                        </ul>
+                    </div>
                     <img src="./img/cake.png" width="759" height="918" alt="главное фото торт">
-                    <a class="btn" href="#">Выбрать торт</a>
-                    <ul class="features">
-                        <li class="features__item">Натуральные ингредиенты</li>
-                        <li class="features__item">Доставка бесплатно при заказе от 2000 рублей*</li>
-                    </ul>
                 </section>
                 <section class="product">
                     <h2 class="page__heading2">Наши торты</h2>
