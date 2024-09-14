@@ -1,0 +1,107 @@
+/* общие свойства */
+.page {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: #2d2829;
+    background-color: #fbebea;
+}
+
+a {
+    color: #2d2829;
+    text-decoration: none;
+}
+
+.page__heading1 {
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 90%;
+}
+
+.page__heading2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 165%;
+}
+
+.page__heading3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 135%;
+}
+
+.center {
+    text-align: center;
+}
+
+.page__subtitle {
+    font-style: italic;
+    font-size: 40px;
+    line-height: 132%;
+}
+
+.page__text {
+    font-size: 20px;
+    line-height: 135%;
+}
+
+svg {
+    padding-left: 15px;
+}
+
+/* основной код */
+
+.phone {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 123%;
+}
+
+.site-navigation__item a {
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.site-navigation__item a.active {
+    color: #f50049;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 208%;
+    text-transform: uppercase;
+    color: #fff;
+
+    border-radius: 25px;
+    padding: 12px 62px;
+    width: 226px;
+    height: 51px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    background: #f50049;
+}
+
+.card__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+}
+
+.adventage {
+    background-image: url(../img/berries.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* блок отзывы */
+.reviews .page__heading3 {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 133%;
+}
+
+.page__desc {
+    font-size: 25px;
+    line-height: 132%;
+}

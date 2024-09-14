@@ -4,6 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet">
         <title>Cakes</title>
     </head>
 
@@ -11,11 +17,11 @@
         <header class="page__header">
             <nav class="header__nav">
                 <p class="logo">
-                    <img src="#" alt="logo">
+                    <img src="./img/logo.svg" alt="logo">
                 </p>
                 <ul class="site-navigation">
                     <li class="site-navigation__item"><a href="#">наши торты</a></li>
-                    <li class="site-navigation__item"><a href="#">индивидуальный заказ</a></li>
+                    <li class="site-navigation__item"><a class="active" href="#">индивидуальный заказ</a></li>
                     <li class="site-navigation__item"><a href="#">отзывы</a></li>
                     <li class="site-navigation__item"><a href="#">о нас</a></li>
                     <li class="site-navigation__item"><a href="#">как заказать</a></li>
@@ -28,7 +34,7 @@
             <section class="main__hero">
                 <h1 class="page__heading1">Торты на заказ</h1>
                 <p class="page__subtitle">Ручная работа</p>
-                <img src="" alt="главное фото торт">
+                <img src="./img/cake.png" width="759" height="918" alt="главное фото торт">
                 <a class="btn" href="#">Выбрать торт</a>
                 <ul class="features">
                     <li class="features__item">Натуральные ингредиенты</li>
@@ -41,29 +47,53 @@
                     <li class="card__item">
                         <h3 class="card__title">Класические</h3>
                         <p class="page__text">24 вида</p>
-                        <img src="" alt="торт 1">
-                        <a class="card__link" href="#">Смотреть</a>
+                        <img src="./img/classic.jpg" width="696" height="653" alt="Класические">
+                        <a class="card__link" href="#">
+                            Смотреть
+                            <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.4476 0.180472C11.216 -0.0601572 10.8305 -0.0601572 10.5909 0.180472C10.3593 0.412971 10.3593 0.799928 10.5909 1.03189L14.9351 5.39301H0.599778C0.265608 5.39355 0 5.66019 0 5.99567C0 6.33114 0.265608 6.60645 0.599778 6.60645H14.9351L10.5909 10.9594C10.3593 11.2001 10.3593 11.5876 10.5909 11.8195C10.8305 12.0602 11.2165 12.0602 11.4476 11.8195L16.8202 6.42598C17.0599 6.19348 17.0599 5.80652 16.8202 5.57456L11.4476 0.180472Z"
+                                    fill="#1E201D" />
+                            </svg>
+                        </a>
                     </li>
                     <li class="card__item">
                         <h3 class="card__title">Муссовые</h3>
                         <p class="page__text">12 видов</p>
-                        <img src="" alt="торт 2">
-                        <a class="card__link" href="#">Смотреть</a>
+                        <img src="./img/muss.jpg" width="484" height="305" alt="Муссовые">
+                        <a class="card__link" href="#">
+                            Смотреть
+                            <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.4476 0.180472C11.216 -0.0601572 10.8305 -0.0601572 10.5909 0.180472C10.3593 0.412971 10.3593 0.799928 10.5909 1.03189L14.9351 5.39301H0.599778C0.265608 5.39355 0 5.66019 0 5.99567C0 6.33114 0.265608 6.60645 0.599778 6.60645H14.9351L10.5909 10.9594C10.3593 11.2001 10.3593 11.5876 10.5909 11.8195C10.8305 12.0602 11.2165 12.0602 11.4476 11.8195L16.8202 6.42598C17.0599 6.19348 17.0599 5.80652 16.8202 5.57456L11.4476 0.180472Z"
+                                    fill="#1E201D" />
+                            </svg>
+                        </a>
                     </li>
                     <li class="card__item">
-                        <h3 class="card__title">Класические</h3>
+                        <h3 class="card__title">
+                            Свадебные
+                            <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.4476 0.180472C11.216 -0.0601572 10.8305 -0.0601572 10.5909 0.180472C10.3593 0.412971 10.3593 0.799928 10.5909 1.03189L14.9351 5.39301H0.599778C0.265608 5.39355 0 5.66019 0 5.99567C0 6.33114 0.265608 6.60645 0.599778 6.60645H14.9351L10.5909 10.9594C10.3593 11.2001 10.3593 11.5876 10.5909 11.8195C10.8305 12.0602 11.2165 12.0602 11.4476 11.8195L16.8202 6.42598C17.0599 6.19348 17.0599 5.80652 16.8202 5.57456L11.4476 0.180472Z"
+                                    fill="#1E201D" />
+                            </svg>
+                        </h3>
                         <p class="page__text">20 видов</p>
-                        <img src="" alt="торт 3">
+                        <img src="./img/wedding.jpg" width="484" height="305" alt="Свадебные">
                         <a class="card__link" href="#">Смотреть</a>
                     </li>
                 </ul>
             </section>
             <section class="reviews">
-                <h2 class="page__heading2">Отзывы</h2>
+                <h2 class="page__heading2 center">Отзывы</h2>
                 <div class="reviews__item">
                     <h3 class="page__heading3">Мария</h3>
                     <p class="page__desc">юрист, 33 года</p>
-                    <img src="" alt="">
+                    <img src="./img/reviews.jpg" width="210" height="210" alt="Мария">
                     <p class="page__text">
                         Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную
                         доставку! Теперь будем
@@ -101,22 +131,24 @@
                         <address class="page__text">г. Москва , ул. Мясницкая, 13, стр. 18</address>
                     </li>
                     <li class="contacts__item">
+                        <h3 class="page__heading3">Мы в соц. сетях:</h3>
                         <ul class="social__items">
                             <li class="social__item">
-                                <a href="#"><img src="#" alt="соц сети"></a>
+                                <a href="#"><img src="./img/instagram.svg" width="28" height="28" alt="соц сети"></a>
                             </li>
                             <li class="social__item">
-                                <a href="#"><img src="#" alt="соц сети"></a>
+                                <a href="#"><img src="./img/VK.svg" width="33" height="20" alt="соц сети"></a>
                             </li>
                         </ul>
                     </li>
                 </ul>
+                <img src="./img/map.jpg" width="696" height="450" alt="карта">
             </section>
         </main>
         <footer class="footer">
             <p class="logo">
                 <a href="#">
-                    <img src="#" alt="">
+                    <img src="./img/logo.svg" alt="logo">
                 </a>
             </p>
             <ul class="site-navigation">
