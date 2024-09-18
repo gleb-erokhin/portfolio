@@ -1,0 +1,80 @@
+@import "./reset.css";
+
+body {
+    font-family: "Playfair Display", sans-serif;
+    padding-top: 60px;
+    padding-left: 60px;
+    color: #000;
+    font-weight: 400;
+}
+
+.card {
+    width: 420px;
+    padding: 20px 40px 60px;
+
+    background: #fff;
+    border: 1px solid #bdd1e9;
+    text-align: center;
+}
+
+.card__img {
+    margin-bottom: 20px;
+}
+
+.card__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #0387d7;
+}
+
+.card__text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card__text .card__link {
+    text-decoration: underline;
+    color: #086bc7;
+}
+
+.card__price {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.card__price span {
+    font-weight: 700;
+}
+
+.button {
+    position: relative;
+    padding: 14px 75px 19px;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+
+    transition:
+        background-color 0.2s ease-in,
+        color 0.2s ease-in,
+        border 0.2s ease-in;
+        top: 1px;
+}
+
+.button:hover,
+.button:focus {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #272727;
+}
+
+.button:active {
+    background: #444;
+    border: 1px solid #444;
+    color: #fff;
+}
