@@ -1,0 +1,93 @@
+/* обзие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    line-height: 1;
+}
+
+/* основные стили */
+
+/* центрирование и ширина контента */
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #f0f8ff;
+    color: black;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.nav {
+    background-color: #496883;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+}
+
+.nav a {
+    color: #fff;
+    margin-right: 30px;
+}
+
+.nav a:last-child {
+    margin-right: 0;
+}
+
+
+.main {
+    background-color: #dcebf0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+
+blockquote {
+    font-size: 18px;
+    margin: 40px 0;
+    padding: 15px 40px;
+    border-left: 3px solid #f24137;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+.footer {
+    background-color: #1d3f5e;
+    color: #fff;
+    margin: 20px 0;
+    padding: 20px 40px;
+}
+
+/* 
+я бы так же убрал у стилей margin сверху, и оставил бы только снизу,
+они друг друга будут отталкивать, все равно верхний марджин не работает, так как он схопывается с нижним от другого блока. 
+*/

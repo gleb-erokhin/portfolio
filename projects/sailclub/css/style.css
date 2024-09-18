@@ -11,8 +11,7 @@ a {
 
 h1,
 h2,
-h3,
-p {
+h3 {
     margin: 0;
 }
 
@@ -36,37 +35,54 @@ p {
     font-style: italic;
     font-weight: 400;
     font-size: 44px;
-    line-height: 136%;
+    line-height: 138%;
     text-transform: uppercase;
     /* padding-left: 70px; */
-    padding-bottom: 40px;
+    padding-bottom: 36px;
 }
 
 /* блок новости */
 .news {
     width: 1030px;
-    padding: 0 70px;
 }
 
 .date-news {
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
 }
 
-.header-news,
-.header-contacts {
-    padding-bottom: 10px;
+.header-news {
+    padding-top: 8px;
     text-decoration: underline;
     text-decoration-color: #00c6bd;
     text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
+    text-underline-offset: 15px;
     text-underline-position: under;
     font-weight: 700;
     font-size: 24px;
-    line-height: 142%;
+    line-height: 130%;
+}
+
+.header-contacts {
+    /* padding-bottom: 10px; */
+    text-decoration: underline;
+    text-decoration-color: #00c6bd;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
+    text-underline-position: under;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 136%;
 }
 
 .text-news {
-    padding-top: 35px;
+    margin-top: 20px;
+    /* padding-top: 35px;
+    padding-bottom: 15px; */
+    font-size: 16px;
+    line-height: 148%; 
 }
 
 /* контакты */
@@ -75,11 +91,11 @@ p {
     margin-bottom: 120px;
 }
 
-.contacts-item p {
+/* .contacts-item p {
     padding-bottom: 15px;
     padding-top: 15px;
 }
 
 .social-list {
     padding-top: 15px;
-}
+} */
