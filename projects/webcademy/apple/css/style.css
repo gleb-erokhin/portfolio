@@ -3,76 +3,73 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding-top: 60px;
     padding-left: 60px;
-    text-align: center;
-    color: #000;
+    line-height: normal;
 }
 
 .card {
-    border: 1px solid #dbb9b9;
     width: 420px;
     padding: 20px 40px 50px;
+
+    border: 1px solid #dbb9b9;
+    text-align: center;
 }
 
-.card__img {
+.card-img {
     margin-bottom: 30px;
 }
 
-.card__title {
-    margin-bottom: 30px;
-    font-weight: 700;
+.card-title {
     font-size: 32px;
+    font-weight: 700;
     color: #cd2626;
+    margin-bottom: 30px;
 }
 
-.card__text {
-    width: 330px;
-    font-weight: 400;
+.card-text {
     font-size: 14px;
     line-height: 1.5;
+
+    padding: 0 5px;
+    margin-bottom: 30px;
 }
 
-.card__text .card__link {
+.card-text .card-link {
     text-decoration: underline;
     color: #bd3030;
 }
 
-.card__text {
+.card-price {
     margin-bottom: 30px;
-}
-
-.card__price {
-    margin-bottom: 30px;
-    font-weight: 400;
     font-size: 26px;
 }
 
-.card__price span {
+.card-price span {
     font-weight: 700;
 }
 
-.button {
+.card-button {
     background-color: #cd2626;
-    border: 1px solid #CD2626;
     border-radius: 8px;
-    padding: 16px 42px;
+    padding: 16px 42px 17px;
 
     font-weight: 700;
     font-size: 22px;
     color: #fff;
+
+    transition: 
+    background-color 0.2s ease-in,
+    color 0.2s ease-in;
 }
 
-.button:hover,
-.button.focus {
+.card-button:hover,
+.card-button:focus {
     background-color: #E41919;
-    border: 1px solid #E41919;
-    color: #fff;
 }
 
-.button:active {
+.card-button:active {
     position: relative;
     top: 1px;
 
     color: #f1c9c9;
     background-color: #8e1010;
-    border: 1px solid #8e1010;
 }
