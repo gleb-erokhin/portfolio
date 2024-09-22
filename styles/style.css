@@ -321,3 +321,49 @@ br {
 .c6 {
     order: 0;
 }
+
+/* блоки для webcademy */
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.block-1 {
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    width: 420px;
+    height: 250px;
+}
+
+.block-2 {
+    width: 300px;
+    height: 250px;
+    color: #fff;
+}
+
+.block-3 {
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    width: 380px;
+    height: 250px;
+    color: #fff;
+}
+
+.link {
+    position: relative;
+    overflow: hidden;
+}
+
+.block {
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #3072be;
+    text-align: center;
+}

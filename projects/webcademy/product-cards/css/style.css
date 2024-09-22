@@ -1,0 +1,117 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* 
+font-family: "Noto Sans", sans-serif;
+font-family: "Playfair Display", serif;
+*/
+body {
+    font-family: sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    color: #000;
+}
+
+.contaner {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/* секция */
+
+.section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.section-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-products {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 40px;
+    margin-bottom: 40px;
+}
+
+.section-button-wrapper {
+    /* потому что ссылка inline-block */
+    text-align: center;
+}
+
+/* Заголовки */
+.title {
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #999;
+}
+
+/* карточка */
+
+.card {
+    width: 270px;
+    text-align: center;
+}
+
+.card-img {
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card-old-price {
+    font-size: 14px;
+    color: #999;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+
+.card-price {
+    color: #f72464;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* кнопка */
+.button {
+    display: inline-block;
+    padding: 9px 40px 12px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+
+    border: 1px solid #f72464;
+    border-radius: 4px;
+    background-color: #fff;
+
+    transition: background-color 0.2s ease-in, color 0.2s ease-in, border 0.2s ease-in;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #f72464;
+    color: #fff;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+
+    background-color: #ba1044;
+    border: 1px solid #ba1044;
+}
