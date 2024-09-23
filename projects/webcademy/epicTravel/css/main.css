@@ -1,14 +1,10 @@
 @import "./reset.css";
 @import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,700,800);
 
+/* Общие стили */
 body {
     font-family: 'Manrope', sans-serif;
-    font-size: 14px;
-}
-
-.header {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    font-size: 16px;
 }
 
 .container {
@@ -18,23 +14,28 @@ body {
     margin: 0 auto;
 }
 
+/* header */
+.header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Навигация */
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* gap нужен для отствпа если вдруг количество меню увеличится чтобы оно не прилипло к лого */
     gap: 30px;
 }
 
-.logo {}
-
 .nav-list {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     gap: 60px;
 }
 
 .nav-list a {
-    font-size: 16px;
     color: #000;
     transition: all 0.2s ease-in;
 }
