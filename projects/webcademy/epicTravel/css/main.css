@@ -3,9 +3,46 @@
 
 body {
     font-family: 'Manrope', sans-serif;
+    font-size: 14px;
 }
 
-h1 {
-    font-size: 44px;
-    font-weight: 700;
+.header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.nav-list a {
+    font-size: 16px;
+    color: #000;
+    transition: all 0.2s ease-in;
+}
+
+.nav-list a.active {
+    color: #81B4BD;
+}
+
+.nav-list a:hover {
+    color: #00CEB5;
 }
