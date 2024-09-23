@@ -1,0 +1,11 @@
+@import "./reset.css";
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,700,800);
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+}
