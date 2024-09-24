@@ -330,6 +330,7 @@ br {
     gap: 20px;
     justify-content: center;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .block-1 {
@@ -337,6 +338,10 @@ br {
     border: 1px solid #ccc;
     width: 420px;
     height: 250px;
+}
+
+.block-1 span {
+    font-weight: 700;
 }
 
 .block-2 {
@@ -366,4 +371,24 @@ br {
     line-height: 40px;
     background-color: #3072be;
     text-align: center;
+}
+
+/* дом стили для webcademy */
+.m1 {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 20px;
+    text-align: left;
+}
+.m2 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    padding-left: 50px;
+}
+.nb {
+    border: none;
+}
+.h {
+    height: 150px;
 }
