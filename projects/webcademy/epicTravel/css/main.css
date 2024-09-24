@@ -73,3 +73,30 @@ body {
 .hero-subtitle {
     font-size: 24px;
 }
+
+/* Статьи */
+.article {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.article-img img {
+    border-radius: 40px;
+}
+
+.article-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1;
+    padding-bottom: 20px;
+}
+
+.article-title span {
+    color: #81B4BD;
+}
+
+.article-text {
+    font-size: 18px;
+    line-height: 1.8;
+}
