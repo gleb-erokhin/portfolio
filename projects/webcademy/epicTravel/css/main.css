@@ -57,7 +57,7 @@ body {
 }
 
 /* блок hero */
-.hero {
+.promo {
     display: flex;
     align-items: center;
     padding-left: 70px;
@@ -71,13 +71,13 @@ body {
     color: #fff;
 }
 
-.hero-title {
+.promo-title {
     font-weight: 800;
     font-size: 60px;
     margin-bottom: 10px;
 }
 
-.hero-subtitle {
+.promo-subtitle {
     font-size: 24px;
 }
 
@@ -137,12 +137,12 @@ body {
 /* footer */
 .footer {
     padding-top: 60px;
-    min-height: 208px;
+    padding-bottom: 60px;
     background-color: #111;
     color: #fff;
 }
 
-.footer-content {
+.footer-row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -155,20 +155,21 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-adress {
-    display: flex;
+.footer-address {
+    text-align: right;
+    /* display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: end; */
 }
 
 .footer-phone {
     font-weight: 500;
     font-size: 24px;
-    line-height: 150%;
+    line-height: 1.5;
     color: #fff;
 }
 
-.footer-adress .footer-mail {
+.footer-address .footer-mail {
     display: inline-block;
     color: #00BDA6;
     font-size: 14px;
@@ -176,8 +177,9 @@ body {
     margin-bottom: 10px;
 }
 
-.footer-adress p {
+.footer-address p {
     font-size: 14px;
+    line-height: 1.5;
     color: rgba(255, 255, 255, 0.5);
 }
 
