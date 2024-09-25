@@ -24,6 +24,10 @@ body {
     padding-bottom: 40px;
 }
 
+.header-bg {
+    background-color: #F6F6F6;
+}
+
 /* Навигация */
 .nav {
     display: flex;
@@ -175,4 +179,57 @@ body {
 .footer-adress p {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.5);
+}
+
+/* страница Туры */
+.cards-content {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.cards-title {
+    padding-right: 27px;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 60px;
+}
+
+.cards-item {
+    width: 370px;
+
+}
+
+.card-img {
+    margin-bottom: 20px;
+}
+
+.cards-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cards-item-info a {
+    font-weight: 500;
+    color: #81B4BD;
+    text-decoration: underline;
+}
+
+.cards-item-title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.cards-item-text {
+    line-height: 1.5;
 }
