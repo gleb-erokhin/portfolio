@@ -14,6 +14,10 @@ body {
     margin: 0 auto;
 }
 
+.container.container-article {
+    width: 1000px;
+}
+
 .title-1 {
     font-size: 48px;
     line-height: 1;
@@ -36,6 +40,16 @@ body {
 
 .header-bg {
     background-color: #F6F6F6;
+}
+
+/* отступы заголовка и главного контента */
+.inner-page {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.inner-title-wrapper {
+    margin-bottom: 60px;
 }
 
 /* Навигация */
@@ -185,15 +199,6 @@ body {
 }
 
 /* страница Туры */
-.tours-page {
-    padding-top: 90px;
-    padding-bottom: 90px;
-}
-
-.tours-title-wrapper {
-    margin-bottom: 60px;
-}
-
 .cards-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -235,3 +240,18 @@ body {
     line-height: 1.5;
 }
 
+/* О компании */
+.article-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.article-content p+p {
+    margin-top: 30px;
+}
+
+.article-img {
+    margin: 40px 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
