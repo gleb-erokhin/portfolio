@@ -14,6 +14,16 @@ body {
     margin: 0 auto;
 }
 
+.title-1 {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .none {
     display: none !important;
 }
@@ -107,13 +117,7 @@ body {
     border-radius: 40px;
 }
 
-.content-title {
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 1;
-}
-
-.content-title span {
+.title-1 span {
     color: #81B4BD;
 }
 
@@ -157,9 +161,6 @@ body {
 
 .footer-address {
     text-align: right;
-    /* display: flex;
-    flex-direction: column;
-    align-items: end; */
 }
 
 .footer-phone {
@@ -184,54 +185,53 @@ body {
 }
 
 /* страница Туры */
-.cards-content {
+.tours-page {
     padding-top: 90px;
     padding-bottom: 90px;
 }
 
-.cards-title {
-    padding-right: 27px;
-    font-size: 48px;
-    line-height: 1;
-    text-align: center;
-    font-weight: 800;
+.tours-title-wrapper {
     margin-bottom: 60px;
 }
 
-.cards-list {
+.cards-wrapper {
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 60px;
 }
 
-.cards-item {
+.card {
     width: 370px;
 
 }
 
 .card-img {
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
     margin-bottom: 20px;
 }
 
-.cards-item-info {
+.card-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.cards-item-info a {
-    font-weight: 500;
-    color: #81B4BD;
-    text-decoration: underline;
-}
-
-.cards-item-title {
+.card-title {
     font-size: 20px;
     font-weight: 800;
     line-height: 1;
 }
 
-.cards-item-text {
+.card-desc a {
+    font-weight: 500;
+    color: #81B4BD;
+    text-decoration: underline;
+}
+
+.card-desc p {
     line-height: 1.5;
 }
+
