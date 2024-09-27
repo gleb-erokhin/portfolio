@@ -296,15 +296,18 @@ body {
     gap: 10px;
 }
 
-.radio-list {
+.radio-list,
+.checkbox-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.radio-list label {
+.radio-list label,
+.checkbox-list label {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
     gap: 15px;
 }
 
@@ -333,4 +336,23 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    height: 50px;
+    padding: 12px 36px 13px;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px 0 rgba(129, 180, 189, 0.35);
+    background: #81b4bd;
+
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    transition: opacity 0.2s ease-in;
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
 }
