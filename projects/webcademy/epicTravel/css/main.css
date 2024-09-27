@@ -356,3 +356,26 @@ body {
 .submit-btn:hover {
     opacity: 0.8;
 }
+
+.address-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 470px;
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.address-wrapper .address-list {
+    padding-bottom: 60px;
+}
