@@ -24,6 +24,16 @@ body {
     font-weight: 800;
 }
 
+.title-2 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.title-3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -254,4 +264,61 @@ body {
     margin: 40px 0;
     border-radius: 20px;
     overflow: hidden;
+}
+
+/* Контакты */
+.contact-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 30px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px 0 rgba(211, 211, 211, 0.5);
+    background: #fff;
+
+}
+
+.address-wrapper {}
+
+.contact-columns {}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid #b5dee5;
+    background: #eff9fb;
+    border-radius: 2px;
+    height: 50px;
+    padding: 14px 20px;
+
+    color: #36727d;
+    font-weight: 500;
+}
+
+.input::placeholder {
+    font-weight: 500;
+    color: #9eccd4;
+}
+
+.input.input-50 {
+    flex: 1;
+}
+
+.inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
