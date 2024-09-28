@@ -414,10 +414,6 @@ body {
 }
 
 /* чек боксы */
-.real-checkbox {}
-
-
-
 .fake-checkbox {
     position: relative;
     content: '';
