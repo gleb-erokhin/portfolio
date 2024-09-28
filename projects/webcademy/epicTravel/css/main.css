@@ -286,10 +286,6 @@ body {
 
 }
 
-.address-wrapper {}
-
-.contact-columns {}
-
 .form-group {
     display: flex;
     flex-direction: column;
@@ -361,12 +357,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    width: 470px;
 }
 
 .address-list,
-.address-content,
-.map-content {
+.address-item,
+.map-item {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -375,5 +370,5 @@ body {
 .address-list li {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
