@@ -35,9 +35,7 @@
                 </div>
                 <div class="contact-columns">
                     <form class="form-wrapper">
-
                         <h2 class="title-2">Заявка на подбор тура</h2>
-
                         <section class="form-group">
                             <h3 class="title-3">Личные данные</h3>
                             <div class="inputs-wrapper">
@@ -49,9 +47,18 @@
                         <section class="form-group">
                             <h3 class="title-3">Количество человек для тура</h3>
                             <ul class="radio-list">
-                                <li><label><input type="radio" name="number">2 - 4 человека</label></li>
-                                <li><label><input type="radio" name="number">5 - 10 человек</label></li>
-                                <li><label><input type="radio" name="number">11 человек и более</label></li>
+                                <li>
+                                    <label>
+                                    <input type="radio" class="real-radio visually-hidden" name="number">
+                                    <div class="fake-radio"></div>2 - 4 человека
+                                </label>
+                                </li>
+                                <li><label><input type="radio" class="real-radio visually-hidden" name="number">
+                                    <div class="fake-radio"></div>
+                                    5 - 10 человек</label></li>
+                                <li><label><input type="radio" class="real-radio visually-hidden" name="number">
+                                    <div class="fake-radio"></div>
+                                    11 человек и более</label></li>
                             </ul>
                         </section>
                         <section class="form-group">
@@ -59,23 +66,24 @@
                             <ul class="checkbox-list">
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="turns"> Трекинг туры, походы по горам и
+                                        <input type="checkbox" class="real-checkbox visually-hidden" name="turns">
+                                        <div class="fake-checkbox"></div> Трекинг туры, походы по горам и
                                         пересеченной местности.
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="turns"> Восхождения на вершины.
+                                        <input type="checkbox" class="real-checkbox visually-hidden" name="turns"><div class="fake-checkbox"></div> Восхождения на вершины.
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="turns"> Экзотические джунгли, вулканы.
+                                        <input type="checkbox" class="real-checkbox visually-hidden" name="turns"><div class="fake-checkbox"></div> Экзотические джунгли, вулканы.
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox" name="turns"> Комбинированные: море, горы, города, лес.
+                                        <input type="checkbox" class="real-checkbox visually-hidden" name="turns"><div class="fake-checkbox"></div> Комбинированные: море, горы, города, лес.
                                     </label>
                                 </li>
                             </ul>
