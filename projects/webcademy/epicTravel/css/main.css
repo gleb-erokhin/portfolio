@@ -281,6 +281,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 100px;
+    align-items: flex-start;
 }
 
 .form-wrapper {
@@ -399,7 +400,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) scale(0%);
+    transform: translate(-50%, -50%) scale(0);
 
     width: 12px;
     height: 12px;
@@ -409,7 +410,7 @@ body {
 }
 
 .real-radio:checked+.fake-radio::after {
-    transform: translate(-50%, -50%) scale(100%);
+    transform: translate(-50%, -50%) scale(1);
 }
 
 /* чек боксы */
@@ -433,7 +434,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) scale(0%);
+    transform: translate(-50%, -50%) scale(0);
 
     width: 16px;
     height: 13px;
@@ -444,5 +445,5 @@ body {
 }
 
 .real-checkbox:checked + .fake-checkbox::after {
-    transform: translate(-50%, -50%) scale(100%);
+    transform: translate(-50%, -50%) scale(1);
 }
