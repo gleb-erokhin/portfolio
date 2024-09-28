@@ -360,11 +360,13 @@ body {
 .address-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
     width: 470px;
 }
 
-.address-list {
+.address-list,
+.address-content,
+.map-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -374,8 +376,4 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-.address-wrapper .address-list {
-    padding-bottom: 60px;
 }
