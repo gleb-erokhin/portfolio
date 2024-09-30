@@ -4,6 +4,7 @@
 body {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
+    line-height: 2;
 }
 
 .active {
@@ -17,6 +18,7 @@ body {
 .header {
     background-color: #F1F1F1;
     padding-top: 46px;
+    margin-bottom: 90px;
 }
 
 .container {
@@ -28,14 +30,36 @@ body {
 .header-nav {
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .nav-list {
     display: flex;
-    gap: 50px;
     align-items: center;
+    gap: 50px;
 }
 
 .nav-list a {
     color: #000;
+    line-height: normal;
+}
+
+.profile a+a {
+    margin-left: 15px;
+}
+
+/* главный блок */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 176px;
+    padding-top: 73px;
+}
+
+.hero-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: normal;
 }
