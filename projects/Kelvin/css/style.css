@@ -1,0 +1,41 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.active {
+    font-weight: 500;
+    font-size: 14px;
+    color: #606060;
+    ;
+}
+
+/* Заголовок */
+.header {
+    background-color: #F1F1F1;
+    padding-top: 46px;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav-list a {
+    color: #000;
+}
