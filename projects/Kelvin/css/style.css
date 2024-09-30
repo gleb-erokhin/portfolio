@@ -63,3 +63,51 @@ body {
     font-size: 44px;
     line-height: normal;
 }
+
+/* блок возможности */
+.ability {
+    margin-bottom: 90px;
+}
+
+.ability-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.ability-title {
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.ability-subtitle {
+    padding-top: 10px;
+}
+
+/* блок Обо мне */
+.about {
+    margin-bottom: 90px;
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 170px;
+    padding: 50px 60px;
+    box-shadow: 0 15px 25px 0 rgba(192, 192, 192, 0.75);
+    background: linear-gradient(151deg, #b7bdc2 0.1%, #70889f 100%);
+    color: #FFFFFF;
+}
+
+.about-title {
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+}
+
+.about-subtitle p+p {
+    padding-top: 20px;
+}
