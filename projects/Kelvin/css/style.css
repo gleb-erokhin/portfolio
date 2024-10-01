@@ -7,13 +7,6 @@ body {
     line-height: 2;
 }
 
-.active {
-    font-weight: 500;
-    font-size: 14px;
-    color: #606060;
-    ;
-}
-
 /* Заголовок */
 .header {
     background-color: #F1F1F1;
@@ -40,8 +33,17 @@ body {
 }
 
 .nav-list a {
+    font-weight: 500;
+    font-size: 14px;
     color: #000;
     line-height: normal;
+}
+
+.nav-list a:hover {
+    font-weight: 500;
+    font-size: 14px;
+    color: #606060;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .profile a+a {
