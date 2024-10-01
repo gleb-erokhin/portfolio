@@ -1,5 +1,72 @@
+/* tablet */
 @media (max-width: 1199px) {
     .container {
-            width: 900px;
-        }
+        width: 900px;
+    }
+
+    .subtitle {
+        color: #999;
+    }
+}
+
+/* mobile */
+@media (max-width: 899px) {
+    .container {
+        width: 600px;
+    }
+
+    .section {
+        padding-top: 60px;
+        padding-bottom: 67px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-cards {
+        row-gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .button {
+        padding: 11px 24px 13px;
+        font-size: 18px;
+    }
+}
+
+/* mobile XS */
+@media (max-width: 599px) {
+    .container {
+        width: 320px;
+    }
+
+    .section {
+        padding-bottom: 40px;
+    }
+
+    .section-cards {
+        row-gap: 20px;
+        justify-content: center;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-description .card-link {
+        font-size: 18px;
+    }
 }
