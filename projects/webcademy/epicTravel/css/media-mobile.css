@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+  .container {
+    width: 290px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .main-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .promo{
+    padding-top: 40px;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .promo-title {
+    font-size: 34px;
+  }
+
+  .promo-subtitle {
+    font-size: 14px;
+  }
+
+
+}
