@@ -25,6 +25,9 @@
                         <li><a href="about.html">О компании</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
+                    <button class="btn-mobile-nav" type="button">
+                        <img src="./img/icons/open-mobile-nav.svg" alt="open nav">
+                    </button>
                 </div>
             </div>
         </header>
@@ -39,7 +42,11 @@
                 <section class="main-content">
                     <div class="content-row">
                         <div class="content-img">
-                            <img src="./img/article/img-01.jpg" width="570" height="490" alt="Популярные направления">
+                            <picture>
+                                <source srcset="./img/article/img-01-mobile.jpg" media="(max-width: 767px)">
+                                <img src="./img/article/img-01.jpg" width="570" height="490"
+                                    alt="Популярные направления">
+                            </picture>
                         </div>
                         <div class="content-text">
                             <h2 class="title-1"><span>Популярные</span> направления</h2>
@@ -54,9 +61,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="content-row content-row-reverse">
+                    <div class="content-row content-row-reverse content-column-mobile">
                         <div class="content-img">
-                            <img src="./img/article/img-02.jpg" width="570" height="490" alt="Популярные направления">
+                            <picture>
+                                <source srcset="./img/article/img-02-mobile.jpg" media="(max-width: 767px)">
+                                <img src="./img/article/img-02.jpg" width="570" height="490"
+                                    alt="Популярные направления">
+                            </picture>
                         </div>
                         <div class="content-text">
                             <h2 class="title-1"><span>Впечатляющие</span> маршруты</h2>

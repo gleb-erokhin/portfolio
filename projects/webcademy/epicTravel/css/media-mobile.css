@@ -1,22 +1,38 @@
 @media (max-width: 767px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .title-1 {
+    font-size: 28px;
+  }
+
   .container {
-    width: 290px;
+    width: 320px;
   }
 
   .nav-list {
     display: none;
   }
 
+  .btn-mobile-nav {
+    display: block;
+  }
+
   .main-content {
+    row-gap: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
-  .promo{
+  .promo {
     padding-top: 40px;
+    padding-left: 0;
+    justify-content: center;
     align-items: flex-start;
     text-align: center;
   }
+
   .promo-title {
     font-size: 34px;
   }
@@ -25,5 +41,16 @@
     font-size: 14px;
   }
 
+  .content-row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 
+  .content-img {
+    flex-basis: 120px;
+  }
+
+  .content-column-mobile {
+    flex-direction: column !important;
+  }
 }
