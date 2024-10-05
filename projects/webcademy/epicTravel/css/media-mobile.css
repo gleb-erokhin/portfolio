@@ -72,6 +72,28 @@
     row-gap: 20px;
   }
 
+  /* About */
+  .container.container-article {
+    width: 290px;
+  }
+
+  .inner-page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .article-content p {
+    font-size: 14px;
+  }
+
+  .article-content p+p {
+    margin-top: 20px;
+  }
+
+  .article-img {
+    margin: 20px 0;
+  }
+
   .title-1 {
     font-size: 28px;
   }
