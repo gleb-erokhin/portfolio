@@ -84,6 +84,31 @@
     font-size: 16px;
   }
 
+  /* Contacts */
+  .inner-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .contacts-columns {
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .address-wrapper {
+    gap: 40px;
+  }
+
+  iframe {
+    width: 738px;
+  }
+
+  .form-wrapper {
+    width: auto;
+  }
+
   .title-1 {
     font-size: 38px;
   }
