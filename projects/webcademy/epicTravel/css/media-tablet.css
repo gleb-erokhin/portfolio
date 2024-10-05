@@ -91,22 +91,19 @@
   }
 
   .contacts-columns {
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column-reverse;
     gap: 40px;
     align-items: flex-start;
   }
 
   .address-wrapper {
+    width: 100%;
     gap: 40px;
   }
 
-  iframe {
-    width: 738px;
-  }
-
   .form-wrapper {
-    width: auto;
+    width: 100%;
   }
 
   .title-1 {

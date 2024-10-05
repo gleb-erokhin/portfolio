@@ -336,6 +336,11 @@ body {
     align-items: flex-start;
 }
 
+.yandex-map {
+    width: 100%;
+    height: 345px;
+}
+
 .form-wrapper {
     display: flex;
     flex-direction: column;
@@ -419,6 +424,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    width: 470px;
 }
 
 .address-list,
