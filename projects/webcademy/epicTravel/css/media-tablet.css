@@ -67,12 +67,12 @@
     margin-bottom: 40px;
   }
 
-  .cards-wrapper {
-    row-gap: 40px;
-  }
-
   .card {
     width: 354px;
+  }
+  
+  .cards-wrapper {
+    row-gap: 40px;
   }
 
   .title-1 {

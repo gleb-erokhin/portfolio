@@ -56,6 +56,10 @@
     padding-bottom: 40px;
   }
 
+  .card {
+    width: 290px;
+  }
+
   .card-desc a {
     font-size: 14px;
   }
