@@ -7,11 +7,13 @@
         <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
         <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/media-tablet.css">
+        <link rel="stylesheet" href="./css/media-mobile.css">
         <title>Epic Travel Туры</title>
     </head>
 
     <body>
-        <header class="header header-bg">
+        <header class="header header-bg" id="header">
             <div class="container">
                 <div class="nav">
                     <a href="index.html">
@@ -23,9 +25,22 @@
                         <li><a href="about.html">О компании</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
+                    <button class="btn-mobile-nav" id="btn-mobile-nav" type="button">
+                        <img src="./img/icons/open-mobile-nav.svg" id="mobile-nav-img" alt="open nav">
+                    </button>
                 </div>
             </div>
         </header>
+        <!-- мобильное меню -->
+        <div class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tours.html">Туры</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <!-- мобильное меню -->
         <main class="inner-page">
             <div class="container">
                 <div class="inner-title-wrapper">
@@ -129,8 +144,7 @@
             <div class="container">
                 <div class="footer-row">
                     <div class="footer-copy">
-                        <p>2024 © ЭпикТрэвел.</p>
-                        <p>Все права защищены</p>
+                        <p>2024 © ЭпикТрэвел. <br class="desktop-only"> Все права защищены</p>
                     </div>
                     <address class="footer-address">
                         <a class="footer-phone" href="tel:++79054561234">+7 (905) 456-12-34</a><br>
@@ -140,6 +154,7 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/main.js"></script>
     </body>
 
 </html>
