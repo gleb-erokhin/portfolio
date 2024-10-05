@@ -56,14 +56,25 @@ body {
     width: 1px;
 }
 
+.no-scroll {
+    overflow-y: hidden;
+}
+
 /* header */
 .header {
+    /* для мобильной навигации чтобы шапка была сверху */
+    z-index: 19;
+    position: relative;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 .header-bg {
     background-color: #F6F6F6;
+}
+
+.header-white-bg {
+    background-color: #fff;
 }
 
 /* отступы заголовка и главного контента */
@@ -108,7 +119,40 @@ body {
     color: #00CEB5;
 }
 
-/* блок hero */
+/* Мобильная навигация */
+.mobile-nav {
+    /* для управления шапки меньше уровень чем header */
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F6F6;
+    
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* мобильная навигация появляется после присвоения mobile-nav класс open */
+.mobile-nav.open {
+    display: flex;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.mobile-nav-list a {
+    color: #000;
+}
+
+/* блок promo */
 .promo {
     display: flex;
     align-items: center;
