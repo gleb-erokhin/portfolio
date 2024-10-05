@@ -77,27 +77,56 @@
     width: 290px;
   }
 
-  .inner-page {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
   .article-content p {
     font-size: 14px;
   }
 
   .article-content p+p {
-    margin-top: 20px;
+    margin-top: 14px;
   }
 
   .article-img {
     margin: 20px 0;
   }
 
-  /* about */
-  
+  /* Contacts */
+  .address-list li {
+    font-size: 14px;
+  }
+
+  .address-wrapper {
+    gap: 20px;
+  }
+
+  .address-item {
+    width: 290px;
+  }
+
+  iframe {
+    width: 290px;
+  }
+
+  .form-wrapper {
+    padding: 20px 15px;
+  }
+
+  .input.input-50 {
+    flex: none;
+  }
+
+  .radio-list label, .checkbox-list label {
+    font-size: 14px;
+  }
 
   .title-1 {
     font-size: 28px;
+  }
+
+  .title-2 {
+    font-size: 22px;
+  }
+
+  .title-3 {
+    font-size: 18px;
   }
 }
