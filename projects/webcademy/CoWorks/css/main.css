@@ -113,4 +113,21 @@ body {
 }
 .header__logo {
   flex-shrink: 0;
+}
+
+.nav {
+  font-size: 14px;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.nav__link {
+  color: #000;
+  transition: color 0.2s ease-in;
+}
+.nav__link:hover {
+  color: #00AE6C;
 }/*# sourceMappingURL=main.css.map */

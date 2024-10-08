@@ -1,10 +1,12 @@
 .header {
     padding: 40px 0;
+
     &__row {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    
     &__logo {
         // чтобы блок не сжимался вне зависимости от контента
         flex-shrink: 0;
