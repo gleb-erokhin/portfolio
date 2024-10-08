@@ -1,0 +1,13 @@
+// шрифт настроен с плагином Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Manrope:300,regular,700,800);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: #000;
+}
