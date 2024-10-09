@@ -5,8 +5,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        column-gap: 30px;
     }
-    
+
     &__logo {
         // чтобы блок не сжимался вне зависимости от контента
         flex-shrink: 0;

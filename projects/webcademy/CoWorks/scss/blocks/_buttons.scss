@@ -1,4 +1,5 @@
-.btn-dark {
+.btn--dark,
+a.btn--dark {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 80px;
@@ -7,4 +8,44 @@
     font-weight: 700;
     font-size: 16px;
     color: #fff;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #333;
+    }
+}
+
+.btn--green,
+a.btn--green {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 80px;
+    background-color: #00ae6c;
+
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #09e691;
+    }
+}
+.btn--outline,
+a.btn--outline {
+    border: 1px solid #fff;
+
+    display: inline-block;
+    padding: 9px 20px;
+    border-radius: 80px;
+
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    } 
 }

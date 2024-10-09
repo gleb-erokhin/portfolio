@@ -102,6 +102,10 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+.container--large {
+  max-width: 1510px;
+  width: 100%;
+}
 
 .header {
   padding: 40px 0;
@@ -110,6 +114,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .header__logo {
   flex-shrink: 0;
@@ -132,7 +138,8 @@ body {
   color: #00AE6C;
 }
 
-.btn-dark {
+.btn--dark,
+a.btn--dark {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 80px;
@@ -140,4 +147,87 @@ body {
   font-weight: 700;
   font-size: 16px;
   color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+.btn--dark:hover,
+a.btn--dark:hover {
+  background-color: #333;
+}
+
+.btn--green,
+a.btn--green {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 80px;
+  background-color: #00ae6c;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+.btn--green:hover,
+a.btn--green:hover {
+  background-color: #09e691;
+}
+
+.btn--outline,
+a.btn--outline {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 9px 20px;
+  border-radius: 80px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.2s ease-in;
+}
+.btn--outline:hover,
+a.btn--outline:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.promo__wrapper {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: #000;
+  border-radius: 40px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./../img/promo/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .promo__wrapper {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./../img/promo/promo-bg@2x.jpg");
+  }
+}
+.promo__content {
+  max-width: 678px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+.promo__title {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 1;
+}
+.promo__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+.promo__btns {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }/*# sourceMappingURL=main.css.map */
