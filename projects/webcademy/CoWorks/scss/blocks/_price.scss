@@ -1,0 +1,17 @@
+.price {
+    background-color: #F6F6F6;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__cards {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 30px;
+    }
+}
+
+.card {
+    flex: 1;
+}
