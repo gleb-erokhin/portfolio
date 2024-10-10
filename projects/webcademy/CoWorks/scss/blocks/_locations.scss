@@ -1,0 +1,29 @@
+.locations {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        width: 430px;
+    }
+
+    &__controls {
+        display: flex;
+        column-gap: 20px;
+    }
+    // класс для кнопок ненужен, так как reset все сбрасывает и кнопки отображаются как есть картинкой
+}
+
+.slider {
+    display: flex;
+    column-gap: 10px;
+    overflow: hidden;
+
+    img {
+        border-radius: 8px;
+    }
+}

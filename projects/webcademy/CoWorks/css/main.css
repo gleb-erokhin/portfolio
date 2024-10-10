@@ -90,6 +90,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.none {
+  display: none !important;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -112,6 +116,13 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 120px;
+}
+
+.title-section {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #000;
 }
 
 .header {
@@ -282,4 +293,31 @@ a.btn--outline:hover {
   font-size: 24px;
   line-height: 1;
   color: #000;
+}
+
+.locations__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-bottom: 40px;
+}
+.locations__title {
+  width: 430px;
+}
+.locations__controls {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.slider {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  overflow: hidden;
+}
+.slider img {
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */
