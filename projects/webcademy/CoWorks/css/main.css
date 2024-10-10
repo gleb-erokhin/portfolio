@@ -125,13 +125,6 @@ body {
   color: #000;
 }
 
-.subtitle-section {
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1;
-  color: #000;
-}
-
 .header {
   padding: 40px 0;
 }
@@ -330,26 +323,33 @@ a.btn--outline:hover {
 }
 
 .services__title {
+  max-width: 570px;
   margin-bottom: 40px;
 }
 .services__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 40px;
 }
-.services__item {
+.services__list--item {
   width: 270px;
 }
-.services__header {
-  margin-bottom: 10px;
-}
-.services__text {
+
+.service {
   font-size: 14px;
   line-height: 1.5;
-  color: #2f2f2f;
+  color: #2F2F2F;
 }
-.services img {
-  padding-bottom: 20px;
+.service__icon {
+  margin-bottom: 20px;
+}
+.service__title {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */

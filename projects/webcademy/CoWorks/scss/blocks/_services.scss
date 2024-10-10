@@ -1,27 +1,16 @@
 .services {
     &__title {
+        max-width: 570px;
         margin-bottom: 40px;
-    }
-    &__blocks {
     }
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
         column-gap: 30px;
         row-gap: 40px;
     }
-    &__item {
+    &__list--item {
         width: 270px;
-    }
-    &__header {
-        margin-bottom: 10px;
-    }
-    &__text {
-        font-size: 14px;
-        line-height: 1.5;
-        color: #2f2f2f;
-    }
-    img {
-        padding-bottom: 20px;
     }
 }
