@@ -90,10 +90,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.none {
-  display: none !important;
-}
-
 a {
   color: #00AE6C;
   text-decoration: underline;
@@ -115,6 +111,16 @@ body {
   max-width: 1510px;
   width: 100%;
 }
+@media (max-width: 1220px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (max-width: 788px) {
+  .container {
+    width: 360px;
+  }
+}
 
 .main {
   display: flex;
@@ -128,6 +134,10 @@ body {
   font-size: 42px;
   line-height: 1.2;
   color: #000;
+}
+
+.none {
+  display: none !important;
 }
 
 .header {

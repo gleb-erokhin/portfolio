@@ -5,10 +5,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.none {
-    display: none !important;
-}
-
 a {
     color: #00AE6C;
     text-decoration: underline;
@@ -31,6 +27,14 @@ body {
         // переопределяем ширину основоного контейнера чтобы он тянулся уже на новую ширину 1510px
         width: 100%;
     }
+
+    // предусматриваем 20px для скрола который может появится на маленьком экране.
+    @media (max-width: 1220px) {
+        width: 768px;
+    }
+    @media (max-width: 788px) {
+        width: 360px;
+    }
 }
 
 .main {
@@ -48,4 +52,6 @@ body {
     color: #000;
 }
 
-
+.none {
+    display: none !important;
+}
