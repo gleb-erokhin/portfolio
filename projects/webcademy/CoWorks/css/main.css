@@ -507,4 +507,18 @@ a.btn-wa:hover {
   display: flex;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+
+.map__title {
+  margin-bottom: 20px;
+}
+.map__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.map__img {
+  border-radius: 40px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+.map {
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5em;
+        margin-bottom: 20px;
+
+        line-height: 1.5;
+    }
+    &__img {
+        border-radius: 40px;
+    }
+}
