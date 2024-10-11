@@ -94,6 +94,11 @@ html {
   display: none !important;
 }
 
+a {
+  color: #00AE6C;
+  text-decoration: underline;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -521,4 +526,51 @@ a.btn-wa:hover {
 }
 .map__img {
   border-radius: 40px;
+}
+
+.faq__wrapper {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.faq__title {
+  width: 470px;
+  flex-shrink: 0;
+}
+.faq__topics {
+  width: 670px;
+  flex-shrink: 0;
+}
+
+.topic {
+  padding: 30px 0;
+  border-top: 1px solid #ececf1;
+  border-bottom: 1px solid #ececf1;
+}
+.topic__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  color: #000;
+}
+.topic__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.topic__content {
+  padding-top: 30px;
+  line-height: 1.5;
+  display: none;
+  flex-direction: column;
+  row-gap: 1em;
+}
+.topic__content--open {
+  display: flex;
+}
+
+.topic + .topic {
+  margin-top: -1px;
 }/*# sourceMappingURL=main.css.map */

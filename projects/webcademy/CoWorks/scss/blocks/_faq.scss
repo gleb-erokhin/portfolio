@@ -1,0 +1,16 @@
+.faq {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+    &__title {
+        width: 470px;
+        // чтобы не сжимались если какой то из блоков станет больше по тексту объемный
+        flex-shrink: 0;
+    }
+    &__topics {
+        width: 670px;
+        flex-shrink: 0;
+    }
+}

@@ -1,0 +1,39 @@
+.topic {
+    padding: 30px 0;
+    border-top: 1px solid #ececf1;
+    border-bottom: 1px solid #ececf1;
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1;
+        color: #000;
+    }
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // ширина 100% для растягивания кнопки
+        width: 100%;
+    }
+    &__icon {
+    }
+    &__content {
+        padding-top: 30px;
+        line-height: 1.5;
+
+        // расстоляние между абзацами еси ух будет юльше одного
+        // скрываем когда аккордион не нажат
+        display: none;
+        flex-direction: column;
+        row-gap: 1em;
+    }
+    &__content--open {
+        // добавленный 2 класс показывает текст 
+        display: flex;
+    }
+}
+
+.topic + .topic {
+    // нужно для того чтобы бордеры не накладывадись пос второго топика. Подмнимаем на пиксель и верхний блок перекрывает бордер
+    margin-top: -1px;
+}
