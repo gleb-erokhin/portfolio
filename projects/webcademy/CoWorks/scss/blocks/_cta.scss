@@ -1,16 +1,17 @@
-.promo {
+.cta {
     &__wrapper {
         padding: 30px;
-        height: 600px;
+        height: 400px;
 
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         background-color: #000;
         border-radius: 40px;
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-            url("./../img/promo/promo-bg.jpg");
+            url("./../img/cta/cta-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -19,34 +20,31 @@
 
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-                url("./../img/promo/promo-bg@2x.jpg");
+                url("./../img/cta/cta-bg@2x.jpg");
         }
     }
-
     &__content {
-        max-width: 678px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 40px;
+        row-gap: 25px;
     }
-
     &__title {
         font-weight: 800;
-        font-size: 72px;
+        font-size: 42px;
         line-height: 1;
+        color: #fff;
     }
-
     &__text {
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 1;
-
         display: flex;
         flex-direction: column;
         row-gap: 0.5em;
+
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1;
+        color: #fff;
     }
-    
     &__btns {
         display: flex;
         column-gap: 20px;

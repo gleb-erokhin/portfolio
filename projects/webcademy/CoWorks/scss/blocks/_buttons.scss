@@ -51,3 +51,25 @@ a.btn-price {
         color: #fff;
     }
 }
+
+.btn-tg,
+a.btn-tg {
+    // снаружи как инлайн, не тянется на ширину, а по контенту, а внутри флекс
+    display: inline-flex;
+    column-gap: 10px;
+    background-color: #039be5;
+
+    &:hover {
+        background-color: #38bdff;
+    }
+}
+.btn-wa,
+a.btn-wa {
+    display: inline-flex;
+    column-gap: 10px;
+    background-color: #00ae6c;
+
+    &:hover {
+        background-color: #09e691;
+    }
+}
