@@ -7,7 +7,12 @@
     }
     &__cards {
         display: flex;
-        align-items: flex-start;
+        // по умолчанию ровняются по верхней линии
+        // align-items: flex-start;
+        // способны растягиваться если будут в карточке больше текста
+        align-items: stretch;
+        // для того чтобы карточка растянулась необходимо card__body прописать настройку тянуться flex-grow: 1;
+        
         column-gap: 30px;
     }
 }

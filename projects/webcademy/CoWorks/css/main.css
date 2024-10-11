@@ -377,7 +377,7 @@ a.btn-price:hover {
 }
 .price__cards {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -404,6 +404,9 @@ a.btn-price:hover {
   border-radius: 20px;
   box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .card__title {
   margin-bottom: 5px;
@@ -430,4 +433,7 @@ a.btn-price:hover {
 }
 .card__list-item {
   list-style-type: disc;
+}
+.card__btn-wrapper {
+  margin-top: auto;
 }/*# sourceMappingURL=main.css.map */

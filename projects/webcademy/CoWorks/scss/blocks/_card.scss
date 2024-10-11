@@ -18,6 +18,11 @@
         border-radius: 20px;
         box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
         background: #fff;
+        // чтобы кнопка опустилась вниз необходимо назначить ей параметр margin-top: auto; но работать он будет только если будет flex элементом, даем flex. а кнопку надо обернуть в div и уже диву дать свойство auto
+        display: flex;
+        flex-direction: column;
+        // необходимо чтобы блок тянулся на длинну самой большой карточки
+        flex-grow: 1;
     }
     &__title {
         margin-bottom: 5px;
@@ -46,5 +51,9 @@
     }
     &__list-item {
         list-style-type: disc;
+    }
+    &__btn-wrapper {
+        // нужно чтобы кнопка тянулась вниз если у карточки будет больше текста чем у остальных и кнопки были на одном уровне
+        margin-top: auto;
     }
 }
