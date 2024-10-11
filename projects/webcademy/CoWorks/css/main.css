@@ -313,6 +313,7 @@ a.btn-wa:hover {
   flex-direction: column;
   row-gap: 30px;
 }
+
 .benefit {
   display: flex;
   -moz-column-gap: 30px;
