@@ -8,7 +8,7 @@
 }
 
 //миксин макета сайта для телефонв
-@mixin tablet {
+@mixin mobile {
     @media (max-width: 788px) {
         @content;
     }
