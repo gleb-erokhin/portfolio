@@ -3,14 +3,31 @@
         display: flex;
         justify-content: space-between;
         column-gap: 30px;
+
+        @include tablet {
+            flex-direction: column;
+            row-gap: 40px;
+        }
+
+        @include mobile {
+            row-gap: 20px;
+        }
     }
     &__title {
         width: 470px;
         // чтобы не сжимались если какой то из блоков станет больше по тексту объемный
         flex-shrink: 0;
+
+        @include tablet {
+            max-width: auto;
+        }
     }
     &__topics {
         width: 670px;
         flex-shrink: 0;
+
+        @include tablet {
+            width: auto;
+        }
     }
 }
