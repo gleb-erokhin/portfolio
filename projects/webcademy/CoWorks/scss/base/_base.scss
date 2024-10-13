@@ -28,11 +28,10 @@ body {
         width: 100%;
     }
 
-    // предусматриваем 20px для скрола который может появится на маленьком экране.
-    @media (max-width: 1220px) {
-        width: 768px;
+    @include tablet {
+        width: 788px;
     }
-    @media (max-width: 788px) {
+    @include mobile {
         width: 360px;
     }
 }

@@ -111,9 +111,14 @@ body {
   max-width: 1510px;
   width: 100%;
 }
-@media (max-width: 1220px) {
+@media (max-width: 788px) {
   .container {
-    width: 768px;
+    width: 788px;
+  }
+}
+@media (max-width: 788px) {
+  .container {
+    width: 360px;
   }
 }
 @media (max-width: 788px) {
