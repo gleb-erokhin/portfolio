@@ -52,6 +52,12 @@ body {
     row-gap: 120px;
 
     margin-bottom: 120px;
+
+    @include tablet {
+        row-gap: 80px;
+
+        margin-bottom: 80px;
+    }
 }
 
 .title-section {

@@ -138,6 +138,12 @@ body {
   row-gap: 120px;
   margin-bottom: 120px;
 }
+@media (max-width: 1220px) {
+  .main {
+    row-gap: 80px;
+    margin-bottom: 80px;
+  }
+}
 
 .title-section {
   font-weight: 800;
@@ -387,7 +393,7 @@ a.btn-wa:hover {
 
 .benefits__row {
   display: flex;
-  gap: 30px;
+  gap: 45px;
 }
 .benefits__img {
   text-align: center;
