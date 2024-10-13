@@ -2,8 +2,8 @@
     display: flex;
     column-gap: 40px;
     align-items: center;
-    // &__item {
-    // }
-    // &__link {
-    // }
+
+    @include mobile {
+        column-gap: 20px;
+    }
 }

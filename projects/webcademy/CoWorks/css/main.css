@@ -698,6 +698,11 @@ a.btn-wa:hover {
     min-width: 354px;
   }
 }
+@media (max-width: 788px) {
+  .price__cards > * {
+    min-width: unset;
+  }
+}
 
 .card {
   display: flex;
@@ -981,11 +986,23 @@ a.btn-wa:hover {
 .footer a {
   color: #fff;
 }
+@media (max-width: 788px) {
+  .footer {
+    padding: 40px 0;
+  }
+}
 
 .nav-footer {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+@media (max-width: 788px) {
+  .nav-footer {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
 }
 .nav-footer__item {
   font-size: 14px;
@@ -1005,4 +1022,10 @@ a.nav-footer__link:hover {
   -moz-column-gap: 40px;
        column-gap: 40px;
   align-items: center;
+}
+@media (max-width: 788px) {
+  .social-list {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

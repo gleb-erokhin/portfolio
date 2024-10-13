@@ -42,6 +42,10 @@
             @include tablet {
                 min-width: 354px;
             }
+
+            @include mobile {
+                min-width: unset;
+            }
         }
     }
 }
