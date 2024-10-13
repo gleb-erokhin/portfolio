@@ -1,5 +1,6 @@
 .cta {
     &__wrapper {
+        $gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
         padding: 30px;
         height: 400px;
 
@@ -10,17 +11,34 @@
 
         background-color: #000;
         border-radius: 40px;
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-            url("./../img/cta/cta-bg.jpg");
+        background-image: $gradient, url("./../img/cta/cta-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
 
         text-align: center;
         color: #fff;
 
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-                url("./../img/cta/cta-bg@2x.jpg");
+        @include mediaBG {
+            background-image: $gradient, url("./../img/cta/cta-bg@2x.jpg");
+        }
+
+        @include tablet {
+            height: 326px;
+            background-image: $gradient, url("./../img/cta/cta-bg-tablet.jpg");
+
+            @include mediaBG {
+                background-image: $gradient, url("./../img/cta/cta-bg-tablet@2x.jpg");
+            }
+        }
+        @include mobile {
+            height: auto;
+            padding: 40px 15px;
+
+            background-image: $gradient, url("./../img/cta/cta-bg-mobile.jpg");
+
+            @include mediaBG {
+                background-image: $gradient, url("./../img/cta/cta-bg-mobile@2x.jpg");
+            }
         }
     }
     &__content {
@@ -34,6 +52,13 @@
         font-size: 42px;
         line-height: 1;
         color: #fff;
+
+        @include tablet {
+            font-size: 32px;
+        }
+        @include mobile {
+            font-size: 24px;
+        }
     }
     &__text {
         display: flex;
@@ -42,11 +67,20 @@
 
         font-weight: 300;
         font-size: 18px;
-        line-height: 1;
+        line-height: 1.5;
         color: #fff;
+
+        @include tablet {
+            font-size: 16px;
+        }
+        @include mobile {
+            font-size: 14px;
+        }
     }
     &__btns {
         display: flex;
-        column-gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
 }
