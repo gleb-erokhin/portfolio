@@ -40,6 +40,7 @@
             height: auto;
             padding: 60px 15px;
             background-image: $gradient, url("./../img/promo/promo-bg-mobile.jpg");
+            border-radius: 20px;
 
             @include mediaBG {
                 background-image: $gradient, url("./../img/promo/promo-bg-mobile@2x.jpg");
