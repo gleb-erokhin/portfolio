@@ -19,7 +19,7 @@
         flex-shrink: 0;
 
         @include tablet {
-            max-width: auto;
+            width: auto;
         }
     }
     &__topics {

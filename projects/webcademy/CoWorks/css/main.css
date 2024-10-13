@@ -900,7 +900,7 @@ a.btn-wa:hover {
 }
 @media (max-width: 1220px) {
   .faq__title {
-    max-width: auto;
+    width: auto;
   }
 }
 .faq__topics {
@@ -925,7 +925,7 @@ a.btn-wa:hover {
 }
 @media (max-width: 788px) {
   .topic {
-    pa: 15px 0;
+    padding: 15px 0;
   }
 }
 .topic__title {
