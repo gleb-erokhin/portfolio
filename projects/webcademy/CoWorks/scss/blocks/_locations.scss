@@ -5,25 +5,51 @@
         align-items: flex-start;
         column-gap: 30px;
         margin-bottom: 40px;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
 
     &__title {
         width: 430px;
+
+        @include mobile {
+            width: 330px;
+        }
     }
 
     &__controls {
         display: flex;
         column-gap: 20px;
+
+        @include tablet {
+            column-gap: 10px;
+            // width: 42px;
+            // height: 42px;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+        &--mobile {
+            display: none;
+            margin-top: 20px;
+
+            @include mobile {
+                display: block;
+            }
+        }
     }
     // класс для кнопок ненужен, так как reset все сбрасывает и кнопки отображаются как есть картинкой
-}
 
-.slider {
-    display: flex;
-    column-gap: 10px;
-    overflow: hidden;
-
-    img {
-        border-radius: 8px;
+    &__controls-img {
+        @include tablet {
+            width: 42px;
+            height: 42px;
+        }
     }
 }
+
+

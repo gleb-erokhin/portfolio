@@ -1,0 +1,13 @@
+.slider {
+    display: flex;
+    column-gap: 10px;
+    overflow: hidden;
+
+    &__img {
+        border-radius: 8px;
+
+        @include mobile {
+            height: 250px;
+        }
+    }
+}
