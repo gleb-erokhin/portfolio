@@ -3,8 +3,21 @@
     column-gap: 30px;
     align-items: flex-start;
 
+    @include tablet {
+        column-gap: 20px;
+    }
+
+    @include mobile {
+        column-gap: 15px;
+    }
+
     &__img {
         flex-shrink: 0;
+
+        @include tablet {
+            width: 42px;
+            height: 42px;
+        }
     }
     &__desc {
         display: flex;
@@ -21,5 +34,9 @@
         font-size: 24px;
         line-height: 1;
         color: #000;
+
+        @include tablet {
+            font-size: 18px;
+        }
     }
 }
