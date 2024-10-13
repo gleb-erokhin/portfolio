@@ -129,6 +129,21 @@ body {
   }
 }
 
+@media (max-width: 1220px) {
+  .visible-tablet {
+    height: 180px;
+    -o-object-position: 100% 0;
+       object-position: 100% 0;
+  }
+}
+@media (max-width: 788px) {
+  .visible-tablet {
+    height: auto;
+    -o-object-position: 0%;
+       object-position: 0%;
+  }
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -689,7 +704,6 @@ a.btn-wa:hover {
   row-gap: 15px;
 }
 .card__img {
-  max-height: 180px;
   border-radius: 20px;
   box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
   -o-object-fit: cover;

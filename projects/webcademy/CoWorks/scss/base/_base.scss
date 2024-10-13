@@ -17,8 +17,6 @@ body {
     color: #000;
 }
 
-
-
 .title-section {
     font-weight: 800;
     font-size: 42px;
@@ -42,5 +40,18 @@ body {
     // видно на десктопе
     @include tablet {
         display: none;
+    }
+}
+
+.visible-tablet {
+    // применен только к 3 фото в тарифах, нужен для того чтобы фото не растягивалось в ширину больше чем 180px после того как переходит на 2 строку и растягивается на всю ширину
+    @include tablet {
+        height: 180px;
+        object-position: 100% 0;
+    }
+
+    @include mobile {
+        height: auto;
+        object-position: 0%;
     }
 }
