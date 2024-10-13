@@ -19,17 +19,17 @@
         text-align: center;
         color: #fff;
 
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        @include mediaBG {
             background-image: $gradient, url("./../img/promo/promo-bg@2x.jpg");
-        }
+        };
 
         @include tablet {
             height: 434px;
             background-image: $gradient, url("./../img/promo/promo-bg-tablet.jpg");
 
-            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            @include mediaBG {
                 background-image: $gradient, url("./../img/promo/promo-bg-tablet@2x.jpg");
-            }
+            };
         }
         @include mobile {
             // можно сделать 2мя вариантами
@@ -41,9 +41,9 @@
             padding: 60px 15px;
             background-image: $gradient, url("./../img/promo/promo-bg-mobile.jpg");
 
-            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            @include mediaBG {
                 background-image: $gradient, url("./../img/promo/promo-bg-mobile@2x.jpg");
-            }
+            };
         }
     }
 
