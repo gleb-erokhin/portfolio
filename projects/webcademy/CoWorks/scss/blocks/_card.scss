@@ -1,10 +1,10 @@
 .card {
-    max-width: 370px;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
 
     &__img {
+        max-height: 180px;
         border-radius: 20px;
         box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
 

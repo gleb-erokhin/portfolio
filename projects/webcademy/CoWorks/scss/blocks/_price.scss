@@ -1,10 +1,25 @@
 .price {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     padding-top: 60px;
     padding-bottom: 120px;
+
+    @include tablet {
+        padding-bottom: 80px;
+    }
+
+    @include mobile {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
     &__title {
         margin-bottom: 40px;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
+
     &__cards {
         display: flex;
         // по умолчанию ровняются по верхней линии
@@ -12,11 +27,22 @@
         // способны растягиваться если будут в карточке больше текста
         align-items: stretch;
         // для того чтобы карточка растянулась необходимо card__body прописать настройку тянуться flex-grow: 1;
-        
         column-gap: 30px;
+        row-gap: 50px;
+
+        flex-wrap: wrap;
+
+        @include mobile {
+            row-gap: 30px;
+        }
+
+        & > * {
+            flex: 1;
+        
+            @include tablet {
+                min-width: 354px;
+            }
+        }
     }
 }
 
-.card {
-    flex: 1;
-}

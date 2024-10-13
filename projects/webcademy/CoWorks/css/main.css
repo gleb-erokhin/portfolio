@@ -638,31 +638,58 @@ a.btn-wa:hover {
 }
 
 .price {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-top: 60px;
   padding-bottom: 120px;
 }
+@media (max-width: 1220px) {
+  .price {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 788px) {
+  .price {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
 .price__title {
   margin-bottom: 40px;
+}
+@media (max-width: 788px) {
+  .price__title {
+    margin-bottom: 20px;
+  }
 }
 .price__cards {
   display: flex;
   align-items: stretch;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  row-gap: 50px;
+  flex-wrap: wrap;
 }
-
-.card {
+@media (max-width: 788px) {
+  .price__cards {
+    row-gap: 30px;
+  }
+}
+.price__cards > * {
   flex: 1;
 }
+@media (max-width: 1220px) {
+  .price__cards > * {
+    min-width: 354px;
+  }
+}
 
 .card {
-  max-width: 370px;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
 }
 .card__img {
+  max-height: 180px;
   border-radius: 20px;
   box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
   -o-object-fit: cover;
