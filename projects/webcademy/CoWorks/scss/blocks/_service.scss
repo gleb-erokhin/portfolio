@@ -2,14 +2,25 @@
     font-size: 14px;
     line-height: 1.5;
     color: #2F2F2F;
+
     &__icon {
         margin-bottom: 20px;
+
+        @include mobile {
+            margin-bottom: 10px;
+        }
     }
+
     &__title {
         margin-bottom: 10px;
         font-weight: 800;
         font-size: 20px;
         line-height: 1;
         color: #000;
+
+        @include tablet {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
     }
 }

@@ -583,6 +583,11 @@ a.btn-wa:hover {
   max-width: 570px;
   margin-bottom: 40px;
 }
+@media (max-width: 788px) {
+  .services__title {
+    margin-bottom: 20px;
+  }
+}
 .services__list {
   display: flex;
   flex-wrap: wrap;
@@ -591,8 +596,18 @@ a.btn-wa:hover {
        column-gap: 30px;
   row-gap: 40px;
 }
+@media (max-width: 788px) {
+  .services__list {
+    gap: 20px;
+  }
+}
 .services__list--item {
-  width: 270px;
+  max-width: 270px;
+}
+@media (max-width: 1220px) {
+  .services__list--item {
+    max-width: 354px;
+  }
 }
 
 .service {
@@ -603,12 +618,23 @@ a.btn-wa:hover {
 .service__icon {
   margin-bottom: 20px;
 }
+@media (max-width: 788px) {
+  .service__icon {
+    margin-bottom: 10px;
+  }
+}
 .service__title {
   margin-bottom: 10px;
   font-weight: 800;
   font-size: 20px;
   line-height: 1;
   color: #000;
+}
+@media (max-width: 1220px) {
+  .service__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
 }
 
 .price {
