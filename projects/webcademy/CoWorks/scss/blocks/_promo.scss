@@ -1,5 +1,8 @@
 .promo {
     &__wrapper {
+        // переменные для градиента при использовании миксинов
+        $gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+
         padding: 30px;
         height: 600px;
 
@@ -9,8 +12,7 @@
 
         background-color: #000;
         border-radius: 40px;
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-            url("./../img/promo/promo-bg.jpg");
+        background-image: $gradient, url("./../img/promo/promo-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -18,8 +20,7 @@
         color: #fff;
 
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-                url("./../img/promo/promo-bg@2x.jpg");
+            background-image: $gradient, url("./../img/promo/promo-bg@2x.jpg");
         }
 
         @include tablet {
