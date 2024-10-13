@@ -6,7 +6,7 @@ html {
 }
 
 a {
-    color: #00AE6C;
+    color: #00ae6c;
     text-decoration: underline;
 }
 
@@ -22,10 +22,21 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 
+    @include tablet {
+        width: 788px;
+    }
+    @include mobile {
+        width: 360px;
+    }
+
     &--large {
         max-width: 1510px;
         // переопределяем ширину основоного контейнера чтобы он тянулся уже на новую ширину 1510px
         width: 100%;
+
+        @include tablet {
+            width: auto;
+        }
     }
     &--mobile-fluid {
         @include mobile {
@@ -33,14 +44,7 @@ body {
             width: auto;
         }
     }
-    @include tablet {
-        width: 788px;
-    }
-    @include mobile {
-        width: 360px;
-    }
 }
-
 
 .main {
     display: flex;

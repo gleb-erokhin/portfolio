@@ -91,7 +91,7 @@ html {
 }
 
 a {
-  color: #00AE6C;
+  color: #00ae6c;
   text-decoration: underline;
 }
 
@@ -107,15 +107,6 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-.container--large {
-  max-width: 1510px;
-  width: 100%;
-}
-@media (max-width: 788px) {
-  .container--mobile-fluid {
-    width: auto;
-  }
-}
 @media (max-width: 1220px) {
   .container {
     width: 788px;
@@ -124,6 +115,20 @@ body {
 @media (max-width: 788px) {
   .container {
     width: 360px;
+  }
+}
+.container--large {
+  max-width: 1510px;
+  width: 100%;
+}
+@media (max-width: 1220px) {
+  .container--large {
+    width: auto;
+  }
+}
+@media (max-width: 788px) {
+  .container--mobile-fluid {
+    width: auto;
   }
 }
 
@@ -295,6 +300,18 @@ a.btn-wa:hover {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./../img/promo/promo-bg@2x.jpg");
   }
 }
+@media (max-width: 1220px) {
+  .promo__wrapper {
+    height: 434px;
+  }
+}
+@media (max-width: 788px) {
+  .promo__wrapper {
+    height: 370px;
+    height: auto;
+    padding: 60px 15px;
+  }
+}
 .promo__content {
   max-width: 678px;
   display: flex;
@@ -302,10 +319,32 @@ a.btn-wa:hover {
   align-items: center;
   row-gap: 40px;
 }
+@media (max-width: 1220px) {
+  .promo__content {
+    max-width: 561px;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 788px) {
+  .promo__content {
+    max-width: 330px;
+    row-gap: 20px;
+  }
+}
 .promo__title {
   font-weight: 800;
   font-size: 72px;
   line-height: 1;
+}
+@media (max-width: 1220px) {
+  .promo__title {
+    font-size: 52px;
+  }
+}
+@media (max-width: 788px) {
+  .promo__title {
+    font-size: 32px;
+  }
 }
 .promo__text {
   font-weight: 300;
@@ -315,10 +354,23 @@ a.btn-wa:hover {
   flex-direction: column;
   row-gap: 0.5em;
 }
+@media (max-width: 1220px) {
+  .promo__text {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
 .promo__btns {
   display: flex;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+@media (max-width: 788px) {
+  .promo__btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .benefits__row {
