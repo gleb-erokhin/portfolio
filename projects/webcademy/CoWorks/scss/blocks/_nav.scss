@@ -5,9 +5,9 @@
         display: flex;
         align-items: center;
         column-gap: 40px;
-        
+
         @include tablet {
-            padding: 20px;
+            column-gap: 20px;
         }
     }
 
@@ -19,7 +19,7 @@
         transition: color 0.2s ease-in;
 
         &:hover {
-            color: #00AE6C;
+            color: #00ae6c;
         }
     }
 }

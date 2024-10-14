@@ -212,7 +212,8 @@ body {
 }
 @media (max-width: 1220px) {
   .nav__list {
-    padding: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
 }
 .nav__link {
@@ -220,7 +221,7 @@ body {
   transition: color 0.2s ease-in;
 }
 .nav__link:hover {
-  color: #00AE6C;
+  color: #00ae6c;
 }
 
 .btn {
