@@ -6,6 +6,18 @@ const modal = document.querySelector('.modal');
 const closeModalBtn = document.querySelector('#closeModal');
 const modalBody = document.querySelector('.modal__body');
 
+/** Функции */
+function closeModal() {
+    modal.classList.remove('modal--open');
+    document.body.classList.remove('no-scroll');
+}
+
+function escCloseBtn(event) {
+    if (event.key == 'Escape') {
+        closeModal();
+    }
+}
+
 /** работаем над открытием модального окна */
 opeModalBtns.forEach(function (item) {
     item.addEventListener('click', function () {
@@ -17,16 +29,11 @@ opeModalBtns.forEach(function (item) {
 });
 
 /** работаем над закрытием модального окна */
-closeModalBtn.addEventListener('click', function () {
-    modal.classList.remove('modal--open');
-    document.body.classList.remove('no-scroll');
-});
+// так как вызываем функцию closeModal, и больше в ней параметров нет, заменим ее сразу вместо function(){}, но без ()
+closeModalBtn.addEventListener('click', closeModal);
 
 /** Закрытие модалки по поле затемнению */
-modal.addEventListener('click', function () {
-    modal.classList.remove('modal--open');
-    document.body.classList.remove('no-scroll');
-});
+modal.addEventListener('click', closeModal);
 
 /** Отключаем поднятие клика чтобы при нажатии внутри модалки она не закрывалась */
 modalBody.addEventListener('click', function (event) {
@@ -34,9 +41,4 @@ modalBody.addEventListener('click', function (event) {
 });
 
 /** Закрываем модалку по кнопке ESC */
-document.addEventListener('keydown', function (event) {
-    if (event.key == 'Escape') {
-        modal.classList.remove('modal--open');
-        document.body.classList.remove('no-scroll');
-    }
-});
+document.addEventListener('keydown', escCloseBtn);
