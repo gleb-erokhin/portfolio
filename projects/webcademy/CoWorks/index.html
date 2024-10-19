@@ -29,22 +29,22 @@
                         </ul>
                     </nav>
 
-                    <button class="header__nav-btn">
-                        <img src="./img/icons/nav-btn-close.svg" alt="open mobile nav">
+                    <button class="header__nav-btn" id="openMobileNavBtn">
+                        <img src="./img/icons/nav-btn-open.svg" alt="open mobile nav">
                     </button>
                 </div>
 
             </div>
         </header>
 
-        <section class="mobile-nav">
+        <section class="mobile-nav" id="mobileNav">
             <h2 class="visually-hidden">Мобильная навигация</h2>
             <div class="mobile-nav__header">
                 <a class="logo mobile-nav__logo" href="#!">
                     <img src="./img/logo/logo.svg" alt="логотип">
                 </a>
-                <button class="mobile-nav__btn">
-                    <img src="./img/icons/nav-btn-open.svg" alt="open mobile nav">
+                <button class="mobile-nav__btn" id="closeMobileNavBtn">
+                    <img src="./img/icons/nav-btn-close.svg" alt="open mobile nav">
                 </button>
             </div>
             <nav class="mobile-nav__body">
@@ -501,6 +501,7 @@
         </a>
 
         <script src="./js/scrollToTop.js"></script>
+        <script src="./js/mobile-nav.js"></script>
     </body>
 
 </html>
