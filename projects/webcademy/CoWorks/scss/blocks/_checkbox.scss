@@ -1,0 +1,49 @@
+// кастомные чекбоксы
+// .real-checkbox {
+// }
+
+// Описываем внешни вид фейкового чекбокса
+.fake-checkbox {
+    border: 1px solid #999;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+
+    background-color: #fff;
+    // для того чтобы при выборе фекового чекбокса фон проявлялся плавно
+    transition: all 0.2s ease-in;
+
+    // для отрисовки галочки в фейковом чекбоксе
+    position: relative;
+}
+
+// рисуем иконку на фейковом чекбоксе
+.fake-checkbox::after {
+    content: "";
+    // позиционируем по центру относительно реального чекбокса. Родителю даем relative
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    // для плавного появления при выборе. Сначала скрываем по размеру и через transition проявляем
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.2s ease-in;
+
+    // рисуем картинку
+    width: 16px;
+    height: 13px;
+    background-image: url(./../img/icons/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// Меняем состояние фейкового чекбокса при выборе его через параметр checked
+.real-checkbox:checked + .fake-checkbox {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+// обращаемся псевдо элементу фекового чекбокса который является соседом реального чекбокса и меняем в нем scale
+.real-checkbox:checked + .fake-checkbox::after {
+    transform: translate(-50%, -50%) scale(1);
+}

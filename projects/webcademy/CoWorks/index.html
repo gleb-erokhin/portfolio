@@ -37,6 +37,7 @@
             </div>
         </header>
 
+        <!-- Мобильная навигация -->
         <section class="mobile-nav" id="mobileNav">
             <h2 class="visually-hidden">Мобильная навигация</h2>
             <div class="mobile-nav__header">
@@ -448,6 +449,7 @@
                 </div>
             </section>
         </main>
+
         <footer class="footer">
             <div class="container">
                 <div class="footer__col">
@@ -495,6 +497,37 @@
                 </div>
             </div>
         </footer>
+        <!-- Модальное окно -->
+        <section class="modal">
+            <div class="modal__body">
+
+                <button class="modal__close" type="button">
+                    <img src="./img/icons/modal-close.svg" alt="modal-close">
+                </button>
+
+                <div class="modal__header">
+                    <h2 class="modal__title">Заказать звонок</h2>
+                    <p>Перезвоним в течении 15 минут</p>
+                </div>
+
+                <div class="modal__inputs">
+                    <input type="text" class="input" placeholder="Имя">
+                    <input type="text" class="input" placeholder="Телефон">
+
+                    <label class="modal__checkbox-lable">
+                        <input type="checkbox" class="real-checkbox visually-hidden">
+                        <span class="fake-checkbox"></span>
+                        <p>Согласен на <a href="#!">обработку</a> персональных данных</p>
+                    </label>
+                    
+                </div>
+                
+                <button class="btn btn--dark btn--dark-wide" type="button">
+                    Оставить заявку
+                </button>
+            </div>
+        </section>
+
         <!-- стрелка вверх -->
         <a class="top-link" id="scrollToTopBtn" href="#top">
             <img src="./img/icons/arrow-up.svg" alt="стрелка вверх">
