@@ -4,13 +4,22 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    color: #2f2f2f;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    // скрываем модальное окно
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+
+    &--open {
+        opacity: 1;
+        pointer-events: all;
+    }
 
     &__body {
         position: relative;
@@ -20,6 +29,10 @@
 
         border-radius: 20px;
         background: #fff;
+        color: #2f2f2f;
+
+        // изменяем положение модального окна чтобы при появлении оно сдвигалось
+        transform: translate(0, -50%);
 
         display: flex;
         flex-direction: column;
@@ -78,4 +91,10 @@
         align-items: center;
         gap: 10px;
     }
+}
+
+// восстанавливаем положение при открытии, и получаем эффект движения, строка 34 начало
+.modal--open .modal__body {
+    transform: translate(0, 0%);
+    transition: all 0.2s ease-in;
 }
