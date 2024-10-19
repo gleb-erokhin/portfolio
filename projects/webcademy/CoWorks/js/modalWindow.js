@@ -25,6 +25,7 @@ closeModalBtn.addEventListener('click', function() {
 /** Закрытие модалки по поле затемнению */
 modal.addEventListener('click', function() {
     modal.classList.remove('modal--open');
+    document.body.classList.remove('no-scroll');
 })
 
 /** Отключаем поднятие клика чтобы при нажатии внутри модалки она не закрывалась */
