@@ -1,4 +1,6 @@
 .map {
+    @include scrollToTop();
+
     &__title {
         margin-bottom: 20px;
 

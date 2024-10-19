@@ -1,8 +1,10 @@
 .services {
+    @include scrollToTop();
+
     &__title {
         max-width: 570px;
         margin-bottom: 40px;
-        
+
         @include mobile {
             margin-bottom: 20px;
         }

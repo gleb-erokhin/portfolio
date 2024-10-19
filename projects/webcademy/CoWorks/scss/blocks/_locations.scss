@@ -1,4 +1,6 @@
 .locations {
+    @include scrollToTop();
+
     &__row {
         display: flex;
         justify-content: space-between;
@@ -51,5 +53,3 @@
         }
     }
 }
-
-
