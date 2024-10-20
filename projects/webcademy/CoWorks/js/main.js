@@ -6,6 +6,10 @@ const slider = tns({
     items: 3,
     slideBy: 'page',
     mouseDrag: true,
-    gutter: 20,
-    autoplay: true
+    gutter: 10,
+    autoplay: false,
+
+    // кастомные элементы управления слайдером
+    controlsContainer: '.locations__controls',
+    nav: false
 });
