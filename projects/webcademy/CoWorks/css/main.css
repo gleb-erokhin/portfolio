@@ -1028,12 +1028,13 @@ a.btn-wa:hover {
     padding-top: 13px;
   }
 }
-.topic__content--open {
-  display: flex;
-}
 
 .topic + .topic {
   margin-top: -1px;
+}
+
+.topic--open .topic__content {
+  display: flex;
 }
 
 .footer {
