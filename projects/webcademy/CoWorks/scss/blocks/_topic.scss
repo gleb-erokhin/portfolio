@@ -35,18 +35,27 @@
         }
     }
     &__content {
-        padding-top: 30px;
+        // padding-top: 30px;
         line-height: 1.5;
 
-        // расстоляние между абзацами еси ух будет юльше одного
-        // скрываем когда аккордион не нажат
-        display: none;
-        flex-direction: column;
-        row-gap: 1em;
+        // свойства для отображения текста плавно. Убираем высоту, и скрываем все наложения текста которые могут быть. Высоту открытия настраиваем через код topic.js
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.4s ease-in;
 
         @include mobile {
             font-size: 14px;
             padding-top: 13px;
+        }
+
+        &-padding {
+            // расстоляние между абзацами если их будет юльше одного
+            display: flex;
+            flex-direction: column;
+            row-gap: 1em;
+
+            // падинг от параграфа до заголовка при открытом аккордионе
+            padding-top: 30px;
         }
     }
 }
@@ -56,7 +65,24 @@
     margin-top: -1px;
 }
 
-.topic--open .topic__content {
-    // добавленный 2 класс показывает текст
-    display: flex;
-}
+/** v1 вариант, когда блоки открывались резко */
+//         &__content {
+//         padding-top: 30px;
+//         line-height: 1.5;
+
+//         // расстоляние между абзацами еси ух будет юльше одного
+//         // скрываем когда аккордион не нажат
+//         display: none;
+//         flex-direction: column;
+//         row-gap: 1em;
+
+//         @include mobile {
+//             font-size: 14px;
+//             padding-top: 13px;
+//         }
+//     }
+
+// .topic--open .topic__content {
+//     // добавленный 2 класс показывает текст
+//     display: flex;
+// }

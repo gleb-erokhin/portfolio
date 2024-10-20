@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles  */
 @import url(https://fonts.googleapis.com/css?family=Manrope:300,regular,700,800);
 * {
@@ -1016,11 +1017,10 @@ a.btn-wa:hover {
   }
 }
 .topic__content {
-  padding-top: 30px;
   line-height: 1.5;
-  display: none;
-  flex-direction: column;
-  row-gap: 1em;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in;
 }
 @media (max-width: 788px) {
   .topic__content {
@@ -1028,15 +1028,18 @@ a.btn-wa:hover {
     padding-top: 13px;
   }
 }
+.topic__content-padding {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  padding-top: 30px;
+}
 
 .topic + .topic {
   margin-top: -1px;
 }
 
-.topic--open .topic__content {
-  display: flex;
-}
-
+/** v1 вариант, когда блоки открывались резко */
 .footer {
   padding: 60px 0;
   background-color: #000;
