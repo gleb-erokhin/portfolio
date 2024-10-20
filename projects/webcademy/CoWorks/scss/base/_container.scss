@@ -19,10 +19,22 @@
             width: auto;
         }
     }
-    &--mobile-fluid {
-        @include mobile {
+    &--tablet-fluid {
+        @include tablet {
             // только для мобильного экрана блок тянется на всю ширину экрана
             width: auto;
         }
     }
+    // &--mobile-fluid {
+    //     @include mobile {
+    //         // только для мобильного экрана блок тянется на всю ширину экрана
+    //         width: auto;
+    //     }
+    // }
+
+    &--mobile-no-padding {
+        padding: 0;
+        // padding-right: 0;
+    }
 }
+

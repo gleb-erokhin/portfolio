@@ -184,10 +184,13 @@ body {
     width: auto;
   }
 }
-@media (max-width: 788px) {
-  .container--mobile-fluid {
+@media (max-width: 1220px) {
+  .container--tablet-fluid {
     width: auto;
   }
+}
+.container--mobile-no-padding {
+  padding: 0;
 }
 
 .header {
@@ -632,6 +635,10 @@ a.btn-wa:hover {
   .slider__img {
     height: 250px;
   }
+}
+
+#tns1-item0 {
+  padding-left: 15px;
 }
 
 .services {
