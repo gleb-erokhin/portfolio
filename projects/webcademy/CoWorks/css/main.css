@@ -967,11 +967,11 @@ a.btn-wa:hover {
     font-size: 14px;
   }
 }
-.map__img {
+.map__img, .map__iframe {
   border-radius: 40px;
 }
 @media (max-width: 788px) {
-  .map__img {
+  .map__img, .map__iframe {
     border-radius: 20px;
   }
 }
