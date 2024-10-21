@@ -3,11 +3,16 @@
 
 const slider = tns({
     container: '.slider',
-    items: 3,
-    slideBy: 'page',
-    mouseDrag: true,
+
+    items: 2.7,
     gutter: 10,
-    autoplay: false,
+    mouseDrag: true,
+    speed: 400,
+    loop: true,
+    
+    autoWidth: true,
+    lazyload: true,
+    swipeAngel: false,
 
     // кастомные элементы управления слайдером
     controlsContainer: '.locations__controls',

@@ -622,22 +622,21 @@ a.btn-wa:hover {
   }
 }
 
-.slider {
-  display: flex;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  overflow: hidden;
-}
-.slider__img {
+.slider img {
   border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: unset !important;
+  height: unset !important;
+  height: 400px !important;
 }
 @media (max-width: 788px) {
-  .slider__img {
-    height: 250px;
+  .slider img {
+    height: 250px !important;
   }
 }
 
-#tns1-item0 {
+.slider > div:first-child {
   padding-left: 15px;
 }
 
