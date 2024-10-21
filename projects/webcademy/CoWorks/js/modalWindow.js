@@ -7,11 +7,12 @@ const closeModalBtn = document.querySelector('#closeModal');
 const modalBody = document.querySelector('.modal__body');
 
 /** Функции */
+// закрыть модалку
 function closeModal() {
     modal.classList.remove('modal--open');
     document.body.classList.remove('no-scroll');
 }
-
+// закрытие модалки через ESC
 function escCloseBtn(event) {
     if (event.key == 'Escape') {
         closeModal();
