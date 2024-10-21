@@ -1,10 +1,16 @@
 // ищем кнопки для открытия модального окна по атрибуту data-action="modal"
 const opeModalBtns = document.querySelectorAll('[data-action="modal"]')
+
 // ищем главное окно модалки
 const modal = document.querySelector('.modal');
+
 // находим кнопку закрытия окна модалки, ищем по id
 const closeModalBtn = document.querySelector('#closeModal');
 const modalBody = document.querySelector('.modal__body');
+
+// блокировка отправки пока не нажали чекбокс
+const chekboxCheked = document.querySelector(".real-checkbox");
+const sentBtn = document.querySelector("#sentBtn");
 
 /** Функции */
 // закрыть модалку
@@ -43,3 +49,9 @@ modalBody.addEventListener('click', function (event) {
 
 /** Закрываем модалку по кнопке ESC */
 document.addEventListener('keydown', escCloseBtn);
+
+// пока не нажмем на чекбокс кнопка будети не активна
+// в файл _buttons добавлен css код для блокировки кнопки
+chekboxCheked.addEventListener("change", function () {
+    sentBtn.disabled = !chekboxCheked.checked;
+});

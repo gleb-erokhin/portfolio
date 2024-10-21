@@ -334,6 +334,11 @@ a.btn-wa:hover {
   width: 100%;
 }
 
+.btn:disabled, .btn:hover:disabled {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: not-allowed;
+}
+
 .main {
   display: flex;
   flex-direction: column;
