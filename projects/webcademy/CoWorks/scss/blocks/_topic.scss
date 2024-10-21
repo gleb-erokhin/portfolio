@@ -22,11 +22,33 @@
         }
     }
     &__btn {
+        // ширина 100% для растягивания кнопки
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // ширина 100% для растягивания кнопки
-        width: 100%;
+        // для безопасности чтобы текст если будет большой не прилипал к +
+        column-gap: 30px;
+
+        // работает для ховер эффекта, но не для фокуса
+        &:hover:not(:focus-visible) {
+            opacity: 0.5;
+        }
+
+        &:active:not(:focus-visible) .topic__title {
+            color: #00ae6c;
+        }
+
+        // сбрасываем синюю обводку
+        &:focus {
+            outline: none;
+        }
+
+        // обводка только во время перемещения с помощью tab
+        &:focus-visible {
+            outline-offset: 1px;
+            outline: #005fcc auto 1px;
+        }
     }
     &__icon {
         @include mobile {

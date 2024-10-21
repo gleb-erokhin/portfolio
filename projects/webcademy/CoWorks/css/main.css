@@ -96,6 +96,12 @@ a {
   text-decoration: underline;
 }
 
+a:focus,
+button:focus {
+  outline-offset: 1px;
+  outline: #005fcc auto 1px;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -628,6 +634,15 @@ a.btn-wa:hover {
     display: block;
   }
 }
+.locations__controls:focus {
+  outline: none;
+}
+.locations__controls .prev:focus {
+  outline: none;
+}
+.locations__controls .next:focus {
+  outline: none;
+}
 @media (max-width: 1220px) {
   .locations__controls-img {
     width: 42px;
@@ -1024,10 +1039,25 @@ a.btn-wa:hover {
   }
 }
 .topic__btn {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.topic__btn:hover:not(:focus-visible) {
+  opacity: 0.5;
+}
+.topic__btn:active:not(:focus-visible) .topic__title {
+  color: #00ae6c;
+}
+.topic__btn:focus {
+  outline: none;
+}
+.topic__btn:focus-visible {
+  outline-offset: 1px;
+  outline: #005fcc auto 1px;
 }
 @media (max-width: 788px) {
   .topic__icon {
