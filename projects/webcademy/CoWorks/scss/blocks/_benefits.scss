@@ -1,4 +1,6 @@
 .benefits {
+    @include scrollToTop();
+
     &__row {
         display: flex;
         gap: 45px;

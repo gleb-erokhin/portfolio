@@ -452,6 +452,19 @@ a.btn-wa:hover {
   }
 }
 
+.benefits {
+  scroll-margin-top: 60px;
+}
+@media (max-width: 1220px) {
+  .benefits {
+    scroll-margin-top: 40px;
+  }
+}
+@media (max-width: 788px) {
+  .benefits {
+    scroll-margin-top: 30px;
+  }
+}
 .benefits__row {
   display: flex;
   gap: 45px;
